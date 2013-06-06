@@ -26,4 +26,6 @@ The Mako framework is licensed under the [BSD License](http://makoframework.com/
 
 Mako can be installed using composer:
 
-```composer create-project mako/app myawesomeproject```
+```
+composer create-project mako/app myawesomeproject
+```
