@@ -18,5 +18,8 @@
 		"php": ">=5.3.1",
 		"mako/framework": "3.5.*"
 	},
+	"config": {
+	    "preferred-install": "dist"
+	},
 	"minimum-stability": "dev"
 }
