@@ -1,8 +1,5 @@
 # Mako
 
-[![Latest Stable Version](https://poser.pugx.org/mako/app/version.png)](https://packagist.org/packages/mako/app)
-[![Latest Unstable Version](https://poser.pugx.org/mako/app/v/unstable.png)](https://packagist.org/packages/mako/app)
-
 * [Website](http://makoframework.com)
 * [Documentation](http://makoframework.com/docs)
 
