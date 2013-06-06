@@ -8,10 +8,15 @@
 		{
 			"name": "Frederic G. Østby",
 			"email": "frederic.g.ostby@gmail.com"
+		},
+		{
+			"name": "Contributors",
+			"homepage": "http://makoframework.com/contributors"
 		}
 	],
 	"require": {
 		"php": ">=5.3.1",
 		"mako/framework": "3.5.*"
-	}
+	},
+	"minimum-stability": "dev"
 }
