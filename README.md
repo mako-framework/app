@@ -1,5 +1,8 @@
 # Mako
 
+[![Latest Stable Version](https://poser.pugx.org/mako/app/version.png)](https://packagist.org/packages/mako/app)
+[![Latest Unstable Version](https://poser.pugx.org/mako/app/unstable.png)](https://packagist.org/packages/mako/app)
+
 * [Website](http://makoframework.com)
 * [Documentation](http://makoframework.com/docs)
 
@@ -18,3 +21,7 @@ Mako is a lightweight UTF-8 compatible and easy to use PHP5 framework based on t
 ## License?
 
 The Mako framework is licensed under the [BSD License](http://makoframework.com/license/).
+
+## How?
+
+```composer create-project mako/app myawesomeproject```
