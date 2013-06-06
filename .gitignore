@@ -1,0 +1,6 @@
+.DS_Store
+composer.phar
+composer.lock
+/vendor
+/app/storage/console_history
+/app/storage/offline
