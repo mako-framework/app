@@ -22,7 +22,7 @@ ini_set('display_errors', true);
 define('MAKO_APPLICATION_PATH', __DIR__ . '/app');
 
 /**
- * Require the boot file start the application.
+ * Require the boot file and start the application.
  */
 
 require __DIR__ . '/vendor/mako/framework/src/mako/boot.php';
