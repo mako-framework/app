@@ -1,9 +1,5 @@
 <?php
 
-//------------------------------------------------------------------------------------------
-// START OF USER CONFIGURABLE SECTION
-//------------------------------------------------------------------------------------------
-
 /**
  * Set which PHP errors are reported.
  * @see http://php.net/manual/en/function.error-reporting.php
@@ -20,23 +16,15 @@ error_reporting(E_ALL | E_STRICT);
 ini_set('display_errors', true);
 
 /**
- * Define the path to the libraries directory (without trailing slash).
- */
-
-define('MAKO_LIBRARIES_PATH', __DIR__ . '/libraries');
-
-/**
  * Define the path to the app directory (without trailing slash).
  */
 
 define('MAKO_APPLICATION_PATH', __DIR__ . '/app');
 
-//------------------------------------------------------------------------------------------
-// END OF USER CONFIGURABLE SECTION
-//------------------------------------------------------------------------------------------
+/**
+ * Require the boot file start the application.
+ */
 
-require MAKO_LIBRARIES_PATH . '/mako/_init.php';
+require __DIR__ . '/vendor/mako/framework/src/mako/boot.php';
 
 mako\Mako::factory()->run();
-
-/** -------------------- End of file --------------------**/
