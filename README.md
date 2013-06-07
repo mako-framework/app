@@ -1,28 +1,16 @@
-# Mako
+# Mako Framework
 
-* [Website](http://makoframework.com)
-* [Documentation](http://makoframework.com/docs)
+Mako is a lightweight UTF-8 compatible and easy to use PHP framework based on the MVC architectural design pattern.
+Check out the [documentation](http://makoframework.com/docs) and create something awesome!
 
-## What?
+## Requirements
 
-Mako is a lightweight UTF-8 compatible and easy to use PHP5 framework based on the MVC architectural design pattern.
+Mako requires PHP 5.3.1 or higher (PHP 5.3.7 or higher is recommended) as well as the mbstring and PDO extentions.
 
-## Requirements?
+## Installation
 
-* PHP 5.3.1 or higher (PHP 5.3.7 or higher is recommended)
-* mbstring
-* PDO \*
-
-\* only required when/if using the Mako database class.
-
-## License?
-
-The Mako framework is licensed under the [BSD License](http://makoframework.com/license/).
-
-## How?
-
-Mako can be installed using composer:
+Mako can be installed using a single command thanks to [composer](https://packagist.org):
 
 ```
-composer create-project mako/app myawesomeproject
-```
+composer create-project mako/app [project-name]
+``
