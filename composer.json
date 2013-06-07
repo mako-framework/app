@@ -14,6 +14,13 @@
 			"homepage": "http://makoframework.com/contributors"
 		}
 	],
+	"autoload": {
+		"classmap": [
+			"app/controllers",
+			"app/models",
+			"app/tasks"
+		]
+	},
 	"require": {
 		"php": ">=5.3.1",
 		"mako/framework": "3.5.*"
