@@ -14,4 +14,4 @@ Mako can be installed using a single command thanks to [composer](https://packag
 
 ```
 composer create-project mako/app [project-name]
-``
+```
