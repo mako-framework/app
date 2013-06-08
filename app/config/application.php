@@ -124,9 +124,9 @@ return array
 	
 	'error_handler' => array
 	(
-		'log_errors'          => true,
-		'display_errors'      => true, // It is recommended to set this value to false when you are in production.
-		'open_with'           => 'sublime',
+		'log_errors'     => true,
+		'display_errors' => true, // It is recommended to set this value to false when you are in production.
+		'open_with'      => 'sublime',
 	),
 );
 
