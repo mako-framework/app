@@ -23,7 +23,7 @@
 	},
 	"require": {
 		"php": ">=5.3.1",
-		"mako/framework": "dev-master@dev"
+		"mako/framework": "3.5.*"
 	},
 	"config": {
 	    "preferred-install": "dist"
