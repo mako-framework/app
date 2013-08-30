@@ -1,5 +1,8 @@
 # Mako Framework
 
+[![Latest Stable Version](https://poser.pugx.org/mako/app/v/stable.png)](https://packagist.org/packages/mako/app)
+[![Latest Unstable Version](https://poser.pugx.org/mako/app/v/unstable.png)](https://packagist.org/packages/mako/app)
+
 Mako is a lightweight UTF-8 compatible and easy to use PHP framework based on the MVC architectural design pattern.
 
 Check out the [documentation](http://makoframework.com/docs) and create something awesome!
