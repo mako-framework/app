@@ -117,9 +117,9 @@ return array
 	/**
 	 * Error handler settings.
 	 *
-	 * log_errors         : Set to true if you want to log errors caught by the Mako errors handler.
-	 * display_errors     : Set to true to display errors caught by the mako error handlers.
-	 * open_with          : Allows you to open the failing code with your preferred text editor.
+	 * log_errors    : Set to true if you want to log errors caught by the Mako errors handler.
+	 * display_errors: Set to true to display errors caught by the mako error handlers.
+	 * open_with     : Allows you to open the failing code with your preferred text editor.
 	 */
 	
 	'error_handler' => array

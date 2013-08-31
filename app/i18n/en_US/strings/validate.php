@@ -6,6 +6,10 @@
 
 return array
 (
+	/**
+	 * Rule error messages.
+	 */
+
 	'required'                 => 'The %1$s field is required.',
 	'min_length'               => 'The value of the %1$s field must be at least %2$s characters long.',
 	'max_length'               => 'The value of the %1$s field must be less than %2$s characters long.',
@@ -42,7 +46,12 @@ return array
 	'uuid'                     => 'Invalid UUID.',
 	'unique'                   => 'The %1$s must be unique.',
 	'exists'                   => 'The %1$s doesn\'t exist.',
-	'overrides'                => array
+
+	/**
+	 * Custom overrides.
+	 */
+
+	'overrides' => array
 	(
 		'fieldnames' => array
 		(

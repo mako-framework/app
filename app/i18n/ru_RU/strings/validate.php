@@ -6,6 +6,10 @@
 
 return array
 (
+	/**
+	 * Rule error messages.
+	 */
+	
 	'required'                 => 'Поле %1$ обязательно для заполнения.',
 	'min_length'               => 'Поле %1$s должно содержать не более %2$s <pluralize:%2$s>символа</pluralize>.',
 	'max_length'               => 'Поле %1$s должно содержать не менее %2$s <pluralize:%2$s>символа</pluralize>.',
@@ -42,7 +46,12 @@ return array
 	'uuid'                     => 'Недопустимое значение уникального идентификатора.',
 	'unique'                   => '%1$s уже существует.',
 	'exists'                   => '%1$s не существует.',
-	'overrides'                => array
+
+	/**
+	 * Custom overrides.
+	 */
+
+	'overrides' => array
 	(
 		'fieldnames' => array
 		(
