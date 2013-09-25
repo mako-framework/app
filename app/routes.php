@@ -2,4 +2,4 @@
 
 use \mako\http\routing\Routes;
 
-Routes::get('/', '\app\controllers\Index::welcome');
+Routes::get('/', 'app\controllers\Index::welcome');
