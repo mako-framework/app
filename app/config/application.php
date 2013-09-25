@@ -53,6 +53,19 @@ return array
 	 */
 
 	'default_language' => 'en_US',
+
+	/**
+	 * Languages.
+	 * 
+	 * If the first segment of the route matches the language 
+	 * then the corresponding language pack will be loaded.
+	 */
+
+	'languages' => array
+	(
+		//'no' => 'nb_NO',
+		//'fr' => 'fr_FR',
+	),
 	
 	/**
 	 * Locale settings.

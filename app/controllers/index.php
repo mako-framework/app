@@ -2,11 +2,11 @@
 
 namespace app\controllers;
 
-use \mako\View;
+use \mako\view\View;
 
-class Index extends \mako\Controller
+class Index extends \mako\http\routing\Controller
 {
-	public function action_index()
+	public function welcome()
 	{
 		return new View('welcome');
 	}

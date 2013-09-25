@@ -27,4 +27,4 @@ define('MAKO_APPLICATION_PATH', __DIR__ . '/app');
 
 require __DIR__ . '/vendor/mako/framework/src/mako/boot.php';
 
-mako\Mako::factory()->run();
+mako\core\App::factory()->run();
