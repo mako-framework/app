@@ -15,31 +15,31 @@ return array
 	/**
 	 * You can define as many cache configurations as you want.
 	 *
-	 * The supported cache types are: "APC", "Database", "File", "Memcache", "Memcached", "Memory", "Redis", "WinCache", "XCache", "ZendDisk" and "ZendMemory".
+	 * The supported cache types are: "apc", "database", "file", "memcache", "memcached", "memory", "redis", "wincache", "xcache", "zenddisk" and "zendmemory".
 	 *
-	 * type         : Cache type you want to use (case-sensitive).
+	 * type         : Cache type you want to use.
 	 * identifier   : Cache identifier that should be unique to your application to avoid conflicts.
-	 * path         : Cache path (only required when using "File" cache).
-	 * compress_data: Compress stored items? (this requires zlib and is only available when using "Memcache" or "Memcached" cache).
-	 * timeout      : Value in seconds which will be used for connecting to the daemon (only required when using "Memcache" or "Memcached" cache).
-	 * servers      : Cache servers (you can use multiple servers and it is only required when using "Memcache" or "Memcached" cache).
-	 * configuration: Configuration to use for caching (only required when using "Database" or "Redis" cache).
-	 * table        : Name of the database table (only required when using "Database" cache).
-	 * username     : Cache username (only required when using "XCache" cache).
-	 * password     : Cache password (only required when using "XCache" cache).
+	 * path         : Cache path (only required when using "file" cache).
+	 * compress_data: Compress stored items? (this requires zlib and is only available when using "memcache" or "memcached" cache).
+	 * timeout      : Value in seconds which will be used for connecting to the daemon (only required when using "memcache" or "memcached" cache).
+	 * servers      : Cache servers (you can use multiple servers and it is only required when using "memcache" or "memcached" cache).
+	 * configuration: Configuration to use for caching (only required when using "database" or "redis" cache).
+	 * table        : Name of the database table (only required when using "database" cache).
+	 * username     : Cache username (only required when using "xcache" cache).
+	 * password     : Cache password (only required when using "xcache" cache).
 	 */
 	
 	'configurations' => array
 	(
 		'apc' => array
 		(
-			'type'       => 'APC',
+			'type'       => 'apc',
 			'identifier' => MAKO_APPLICATION_ID,
 		),
 
 		'database' => array
 		(
-			'type'          => 'Database',
+			'type'          => 'database',
 			'identifier'    => MAKO_APPLICATION_ID,
 			'configuration' => 'test',
 			'table'         => 'mako_cache',
@@ -47,14 +47,14 @@ return array
 
 		'file' => array
 		(
-			'type'       => 'File',
+			'type'       => 'file',
 			'identifier' => MAKO_APPLICATION_ID,
 			'path'       => MAKO_APPLICATION_PATH . '/storage/cache',
 		),
 
 		'memcache' => array
 		(
-			'type'          => 'Memcache',
+			'type'          => 'memcache',
 			'identifier'    => MAKO_APPLICATION_ID,
 			'compress_data' => false,
 			'timeout'       => 1,
@@ -72,7 +72,7 @@ return array
 		
 		'memcached' => array
 		(
-			'type'          => 'Memcached',
+			'type'          => 'memcached',
 			'identifier'    => MAKO_APPLICATION_ID,
 			'compress_data' => false,
 			'timeout'       => 1,
@@ -89,25 +89,25 @@ return array
 		
 		'memory' => array
 		(
-			'type' => 'Memory',
+			'type' => 'memory',
 		),
 
 		'redis' => array
 		(
-			'type'          => 'Redis',
+			'type'          => 'redis',
 			'identifier'    => MAKO_APPLICATION_ID,
 			'configuration' => 'cache',
 		),
 
 		'wincache' => array
 		(
-			'type'       => 'WinCache',
+			'type'       => 'wincache',
 			'identifier' => MAKO_APPLICATION_ID,
 		),
 
 		'xcache' => array
 		(
-			'type'       => 'XCache',
+			'type'       => 'xcache',
 			'identifier' => MAKO_APPLICATION_ID,
 			'username'   => 'xcache',
 			'password'   => 'xcache',
@@ -115,13 +115,13 @@ return array
 
 		'zenddisk' => array
 		(
-			'type'       => 'ZendDisk',
+			'type'       => 'zenddisk',
 			'identifier' => MAKO_APPLICATION_ID,
 		),
 
 		'zendmemory' => array
 		(
-			'type'       => 'ZendMemory',
+			'type'       => 'zendmemory',
 			'identifier' => MAKO_APPLICATION_ID,
 		),
 	),
