@@ -15,51 +15,39 @@ return array
 	/**
 	 * You can define as many logging configurations as you want.
 	 *
-	 * The supported log types are: "DebugToolbar", "File", "FirePHP", "Growl", "Prowl" and "Syslog".
+	 * The supported log types are: file", "firephp", "syslog" and "toolbar".
 	 *
 	 * Growl and Prowl logging requires the official Growl and Prowl packages.
 	 *
-	 * type         : Log type you want to use (case-sensitive).
+	 * type         : Log type you want to use.
 	 * path         : Location where you want to write the logs (only required when using "file" logs).
-	 * configuration: Growl/Prowl configuration to use for logging (only required when using "growl" or "prowl" logs).
 	 * identifier   : Application identifier (only required when using "syslog" logs).
 	 * facility     : Specify what type of program is logging the message (only required when using "syslog" logs).
 	 */
 	
 	'configurations' => array
 	(
-		'toolbar' => array
-		(
-			'type' => 'DebugToolbar',
-		),
 		'file' => array
 		(
-			'type'  => 'File',
+			'type'  => 'file',
 			'path'  => MAKO_APPLICATION_PATH . '/storage/logs',
 		),
 		
 		'firephp' => array
 		(
-			'type' => 'FirePHP',
+			'type' => 'firephp',
 		),
-
-		/*'growl' => array
-		(
-			'type'          => 'Growl',
-			'configuration' => 'logger',
-		),
-
-		'prowl' => array
-		(
-			'type'          => 'Prowl',
-			'configuration' => 'my_iphone',
-		),*/
 
 		'syslog' => array
 		(
-			'type'       => 'Syslog',
+			'type'       => 'syslog',
 			'identifier' => 'Mako Framework',
 			'facility'   => LOG_USER,
+		),
+		
+		'toolbar' => array
+		(
+			'type' => 'toolbar',
 		),
 	),
 );
