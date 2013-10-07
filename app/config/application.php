@@ -87,7 +87,7 @@ return array
 	'aliases' => array
 	(
 		'URL'    => 'mako\http\routing\URL',
-		'Assets' => 'mako\utility\Assets',
+		'Assets' => 'mako\utility\assets\Assets',
 	),
 
 	/**
