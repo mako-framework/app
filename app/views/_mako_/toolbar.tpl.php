@@ -294,66 +294,96 @@
 <div id="mako-debug">
 
 	<div class="mako-panel" id="mako-queries">
+
 		<div class="mako-close"><a onclick="Mako.togglePanel('mako-queries')">close</a></div>
-		<?php if(empty($query_logs)): ?>
+
+		{% if(empty($query_logs)) %}
+
 			<div class="mako-empty mako-title">No database queries...</div>
-		<?php else: ?>
+
+		{% else %}
+			
 			<p><span class="mako-title">DATABASE QUERIES</span></p>
-			<?php foreach($query_logs as $name => $queries): ?>
 
-				<p><span class="mako-subtitle">Queries executed on the [ <?php echo $name; ?> ] connection:</span></p>
+			{% foreach($query_logs as $name => $queries) %}
 
-				<?php if(empty($queries)): ?>
-				<table class="mako-table">
-					<tr>
-						<td>No database queries have been executed on the connection.</td>
-					</tr>
-				</table>
-				<?php else: ?>
-				<table class="mako-table">
-					<tr>
-						<th>Time</th>
-						<th>Query</th>
-					</tr>
-					<?php foreach($queries as $query): ?>
-					<tr>
-						<td><?php echo round($query['time'], 5); ?> seconds</td>
-						<td><?php echo htmlspecialchars(print_r($query['query'], true), ENT_QUOTES, MAKO_CHARSET); ?></td>
-					</tr>
-					<?php endforeach; ?>
-				</table>
-				<?php endif; ?>
+				<p><span class="mako-subtitle">Queries executed on the [ {{$name}} ] connection:</span></p>
 
-			<?php endforeach; ?>
-		<?php endif; ?>
+				{% if(empty($queries)) %}
+
+					<table class="mako-table">
+						<tr>
+							<td>No database queries have been executed on the connection.</td>
+						</tr>
+					</table>
+
+				{% else %}
+
+					<table class="mako-table">
+
+						<tr>
+							<th>Time</th>
+							<th>Query</th>
+						</tr>
+
+						{% foreach($queries as $query) %}
+
+							<tr>
+								<td>{{round($query['time'], 5)}} seconds</td>
+								<td>{{$query['query']}}</td>
+							</tr>
+
+						{% endforeach %}
+
+					</table>
+
+				{% endif %}
+
+			{% endforeach %}
+			
+		{% endif %}
 	</div>
 
 	<div class="mako-panel" id="mako-log">
+
 		<div class="mako-close"><a onclick="Mako.togglePanel('mako-log')">close</a></div>
-		<?php if(empty($logs)): ?>
-		<div class="mako-empty mako-title">No log entries...</div>
-		<?php else: ?>
-		<p><span class="mako-title">LOG ENTRIES</span></p>
-		<table class="mako-table">
-			<tr>
-				<th>Type</th>
-				<th>File</th>
-				<th>Line</th>
-				<th>Logged</th>
-			</tr>
-			<?php foreach($logs as $log): ?>
-			<tr>
-				<td class="mako-log mako-<?php echo $log['type']; ?>"><?php echo $log['type']; ?></td>
-				<td><?php echo $log['file']; ?></td>
-				<td><?php echo $log['line']; ?></td>
-				<td><?php echo htmlspecialchars(print_r($log['log'], true), ENT_QUOTES, MAKO_CHARSET); ?></td>
-			</tr>
-			<?php endforeach; ?>
-		</table>
-		<?php endif; ?>
+
+		{% if(empty($logs)) %}
+
+			<div class="mako-empty mako-title">No log entries...</div>
+
+		{% else %}
+		
+			<p><span class="mako-title">LOG ENTRIES</span></p>
+
+			<table class="mako-table">
+
+				<tr>
+					<th>Type</th>
+					<th>File</th>
+					<th>Line</th>
+					<th>Logged</th>
+				</tr>
+
+				{% foreach($logs as $log) %}
+
+					<tr>
+						<td class="mako-log mako-{{$log['type']}}">{{$log['type']}}</td>
+						<td>{{$log['file']}}</td>
+						<td>{{$log['line']}}</td>
+						<td>{{print_r($log['log'], true)}}</td>
+					</tr>
+
+				{% endforeach %}
+
+			</table>
+
+		{% endif %}
+
 	</div>
 
 	<div class="mako-panel" id="mako-variables">
+
 		<div class="mako-close"><a onclick="Mako.togglePanel('mako-variables')">close</a></div>
 
 		<?php $globals = array
@@ -368,57 +398,70 @@
 			);
 		?>
 
-		<?php foreach($globals as $name => $global): ?>
+		{% foreach($globals as $name => $global) %}
 
-			<?php if(!empty($global)): ?>
-				<p><span class="mako-title"><?php echo $name; ?></span></p>
+			{% if(!empty($global)) %}
+
+				<p><span class="mako-title">{{$name}}</span></p>
 				<table class="mako-table">
 					<tr>
 						<th>Key</th>
 						<th>Value</th>
 					</tr>
-					<?php foreach($global as $key => $value): ?>
+					{% foreach($global as $key => $value) %}
 					<tr>
-						<td><?php echo htmlspecialchars($key, ENT_QUOTES, MAKO_CHARSET); ?></td>
-						<td><?php echo htmlspecialchars(print_r($value, true), ENT_QUOTES, MAKO_CHARSET); ?></td>
+						<td>{{$key}}</td>
+						<td>{{print_r($value, true)}}</td>
 					</tr>
-					<?php endforeach; ?>
+					{% endforeach %}
 				</table>
 				<br>
-			<?php endif; ?>
-		<?php endforeach; ?>
+
+			{% endif %}
+
+		{% endforeach %}
+
 	</div>
 
 	<div class="mako-panel" id="mako-files">
+
 		<div class="mako-close"><a onclick="Mako.togglePanel('mako-files')">close</a></div>
+
 		<p><span class="mako-title">INCLUDED FILES</span></p>
+
 		<table class="mako-table">
+
 			<tr>
 				<th>#</th>
 				<th>Name</th>
 			</tr>
-			<?php foreach($files as $key => $value): ?>
-			<tr>
-				<td><?php echo $key + 1; ?></td>
-				<td><?php echo htmlspecialchars($value, ENT_QUOTES, MAKO_CHARSET); ?></td>
-			</tr>
-			<?php endforeach; ?>
+
+			{% foreach($files as $key => $value) %}
+			
+				<tr>
+					<td>{{$key + 1}}</td>
+					<td>{{$value}}</td>
+				</tr>
+
+			{% endforeach %}
+
 		</table>
+
 	</div>
 
 	<div id="mako-toolbar-hidden">
-		<div class="mako-icon" title="Mako <?php echo MAKO_VERSION; ?>" onclick="Mako.toggleToolbar(1);"></div>
+		<div class="mako-icon" title="Mako {{MAKO_VERSION}}" onclick="Mako.toggleToolbar(1);"></div>
 	</div>
 
 	<div id="mako-toolbar">
 		<div class="mako-right">
-			<span title="peak memory usage"><?php echo $memory; ?></span>
-			<span title="total execution time"><?php echo $time; ?> seconds</span>
+			<span title="peak memory usage">{{$memory}}</span>
+			<span title="total execution time">{{$time}} seconds</span>
 		</div>
-		<div class="mako-icon" title="Mako <?php echo MAKO_VERSION; ?>" onclick="Mako.toggleToolbar(0);"></div>
-		<a class="mako-button" onclick="Mako.togglePanel('mako-queries')"><span class="mako-strong"><?php echo $query_count; ?></span> database queries<?php if($query_count > 0): ?> <span class="mako-small">( <?php echo $query_time; ?> seconds )</span><?php endif; ?></a>
-		<a class="mako-button" onclick="Mako.togglePanel('mako-log')"><span class="mako-strong"><?php echo count($logs); ?></span> log entries</a>
-		<a class="mako-button" onclick="Mako.togglePanel('mako-files')"><span class="mako-strong"><?php echo count($files); ?></span> included files</a>
+		<div class="mako-icon" title="Mako {{MAKO_VERSION}}" onclick="Mako.toggleToolbar(0);"></div>
+		<a class="mako-button" onclick="Mako.togglePanel('mako-queries')"><span class="mako-strong">{{$query_count}}</span> database queries {% if($query_count > 0) %}<span class="mako-small">( {{$query_time}} seconds )</span>{% endif %}</a>
+		<a class="mako-button" onclick="Mako.togglePanel('mako-log')"><span class="mako-strong">{{count($logs)}}</span> log entries</a>
+		<a class="mako-button" onclick="Mako.togglePanel('mako-files')"><span class="mako-strong">{{count($files)}}</span> included files</a>
 		<a class="mako-button" onclick="Mako.togglePanel('mako-variables')">superglobals</a>
 	</div>
 
