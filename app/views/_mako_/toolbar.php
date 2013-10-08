@@ -197,6 +197,13 @@
 		text-align: center;
 		text-shadow: 0px 2px 0px #fff;
 	}
+	#mako-debug .mako-subtitle
+	{
+		color: #555;
+		font-size: 1.2em;
+		text-align: center;
+		text-shadow: 0px 2px 0px #fff;
+	}
 	#mako-debug .mako-empty
 	{
 		margin: 150px auto;
@@ -288,22 +295,36 @@
 
 	<div class="mako-panel" id="mako-queries">
 		<div class="mako-close"><a onclick="Mako.togglePanel('mako-queries')">close</a></div>
-		<?php if(empty($queries)): ?>
-		<div class="mako-empty mako-title">No database queries...</div>
+		<?php if(empty($query_logs)): ?>
+			<div class="mako-empty mako-title">No database queries...</div>
 		<?php else: ?>
-		<p><span class="mako-title">DATABASE QUERIES</span></p>
-		<table class="mako-table">
-			<tr>
-				<th>Time</th>
-				<th>Query</th>
-			</tr>
-			<?php foreach($queries as $query): ?>
-			<tr>
-				<td><?php echo round($query['time'], 5); ?> seconds</td>
-				<td><?php echo htmlspecialchars(print_r($query['query'], true), ENT_QUOTES, MAKO_CHARSET); ?></td>
-			</tr>
+			<p><span class="mako-title">DATABASE QUERIES</span></p>
+			<?php foreach($query_logs as $name => $queries): ?>
+
+				<p><span class="mako-subtitle">Queries executed on the [ <?php echo $name; ?> ] connection:</span></p>
+
+				<?php if(empty($queries)): ?>
+				<table class="mako-table">
+					<tr>
+						<td>No database queries have been executed on the connection.</td>
+					</tr>
+				</table>
+				<?php else: ?>
+				<table class="mako-table">
+					<tr>
+						<th>Time</th>
+						<th>Query</th>
+					</tr>
+					<?php foreach($queries as $query): ?>
+					<tr>
+						<td><?php echo round($query['time'], 5); ?> seconds</td>
+						<td><?php echo htmlspecialchars(print_r($query['query'], true), ENT_QUOTES, MAKO_CHARSET); ?></td>
+					</tr>
+					<?php endforeach; ?>
+				</table>
+				<?php endif; ?>
+
 			<?php endforeach; ?>
-		</table>
 		<?php endif; ?>
 	</div>
 
@@ -395,7 +416,7 @@
 			<span title="total execution time"><?php echo $time; ?> seconds</span>
 		</div>
 		<div class="mako-icon" title="Mako <?php echo MAKO_VERSION; ?>" onclick="Mako.toggleToolbar(0);"></div>
-		<a class="mako-button" onclick="Mako.togglePanel('mako-queries')"><span class="mako-strong"><?php echo count($queries); ?></span> database queries<?php if(count($queries) != 0): ?> <span class="mako-small">( <?php echo $db_time; ?> seconds )</span><?php endif; ?></a>
+		<a class="mako-button" onclick="Mako.togglePanel('mako-queries')"><span class="mako-strong"><?php echo $query_count; ?></span> database queries<?php if($query_count > 0): ?> <span class="mako-small">( <?php echo $query_time; ?> seconds )</span><?php endif; ?></a>
 		<a class="mako-button" onclick="Mako.togglePanel('mako-log')"><span class="mako-strong"><?php echo count($logs); ?></span> log entries</a>
 		<a class="mako-button" onclick="Mako.togglePanel('mako-files')"><span class="mako-strong"><?php echo count($files); ?></span> included files</a>
 		<a class="mako-button" onclick="Mako.togglePanel('mako-variables')">superglobals</a>
