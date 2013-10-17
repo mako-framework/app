@@ -12,14 +12,14 @@ return array
 	 * If set to '/foo/', the cookie will only be available within the /foo/ directory and all sub-directories.
 	 */
 	
-	'path'     => '/',
+	'path' => '/',
 
 	/**
 	 * The domain that the cookie is available to.
 	 * To make the cookie available on all subdomains of example.org (including example.org itself) then you'd set it to '.example.org'.
 	 */
 	
-	'domain'   => '',
+	'domain' => '',
 
 	/**
 	 * Indicates that the cookie should only be transmitted over a secure HTTPS connection from the client. When set to TRUE, 
@@ -27,7 +27,7 @@ return array
 	 * only on secure connection (e.g. with respect to $this->request->secure()).
 	 */
 
-	'secure'   => false,
+	'secure' => false,
 
 	/**
 	 * When TRUE the cookie will be made accessible only through the HTTP protocol. 

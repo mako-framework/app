@@ -30,7 +30,7 @@ return array
 	 * You should NOT use the secret included with the framework in a production environment!
 	 */
 	
-	'secret'   => 'oib[H7:Jqn2QcMv77>qMpc<gTLFndNLd',
+	'secret' => 'oib[H7:Jqn2QcMv77>qMpc<gTLFndNLd',
 
 	/**
 	 * Set the default timezone used by various PHP date functions.
