@@ -9,7 +9,7 @@ Check out the [documentation](http://makoframework.com/docs) and create somethin
 
 ## Requirements
 
-Mako requires PHP 5.3.1 or higher (PHP 5.3.7 or higher is recommended) as well as the mbstring and PDO extensions.
+Mako requires PHP 5.4.0 or higher as well as the mbstring and PDO extensions.
 
 ## Installation
 
