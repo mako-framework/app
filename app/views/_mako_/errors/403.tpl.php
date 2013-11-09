@@ -60,7 +60,7 @@ hr
 <body>
 
 <div id="message">
-<h1>404 <small>Forbidden</small></h1>
+<h1>403 <small>Forbidden</small></h1>
 <hr>
 <p>You don't have permission to access this page.</p>
 </div>
