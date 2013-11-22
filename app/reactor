@@ -25,4 +25,4 @@ define('MAKO_APPLICATION_PATH', __DIR__);
 
 require dirname(__DIR__) . '/vendor/mako/framework/src/mako/boot.php';
 
-mako\reactor\Reactor::factory()->run(array_slice($_SERVER['argv'], 1));
+(new mako\reactor\Reactor)->run(array_slice($_SERVER['argv'], 1));
