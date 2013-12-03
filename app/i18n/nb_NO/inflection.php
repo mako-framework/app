@@ -4,25 +4,25 @@
 // nb_NO inflection rules
 //---------------------------------------------
 
-return array
-(
+return 
+[
 	// Inflection rules
 
-	'rules' => array
-	(
+	'rules' => 
+	[
 		// Plural noun forms
 
-		'plural' => array
-		(
+		'plural' => 
+		[
 			'/er$/i' => "ere",
 			'/e$/i'  => "er",
 			'/$/'    => "er",
-		),
+		],
 
 		// Irregular words
 
-		'irregular' => array
-		(
+		'irregular' => 
+		[
 			'and'   => 'ender',
 			'barn'  => 'barn',
 			'bok'   => 'bøker',
@@ -37,8 +37,8 @@ return array
 			'tre'   => 'trær',
 			'tå'    => 'tær',
 			'vann'  => 'vann',
-		),
-	),
+		],
+	],
 
 	// Pluralization function
 
@@ -66,6 +66,6 @@ return array
 
 		return $word;
 	},
-);
+];
 
 /** -------------------- End of file --------------------**/

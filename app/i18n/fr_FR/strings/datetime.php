@@ -4,8 +4,8 @@
 // Language file used by mako\DateTime
 //---------------------------------------------
 
-return array
-(
+return 
+[
 	'today'       => 'aujourd\'hui',
 	'yesterday'   => 'hier',
 	'minute_ago'  => 'il ya une minute',
@@ -16,6 +16,6 @@ return array
 	'days_ago'    => 'il ya %u jours',
 	'week_ago'    => 'il ya une semaine',
 	'weeks_ago'   => 'il ya %u semaines',
-);
+];
 
 /** -------------------- End of file --------------------**/

@@ -4,8 +4,8 @@
 // Cache configuration
 //---------------------------------------------
 
-return array
-(
+return 
+[
 	/**
 	 * Default configuration to use.
 	 */
@@ -29,102 +29,102 @@ return array
 	 * password     : Cache password (only required when using "xcache" cache).
 	 */
 	
-	'configurations' => array
-	(
-		'apc' => array
-		(
+	'configurations' => 
+	[
+		'apc' => 
+		[
 			'type'       => 'apc',
 			'identifier' => MAKO_APPLICATION_ID,
-		),
+		],
 
-		'database' => array
-		(
+		'database' => 
+		[
 			'type'          => 'database',
 			'identifier'    => MAKO_APPLICATION_ID,
 			'configuration' => 'test',
 			'table'         => 'mako_cache',
-		),
+		],
 
-		'file' => array
-		(
+		'file' => 
+		[
 			'type'       => 'file',
 			'identifier' => MAKO_APPLICATION_ID,
 			'path'       => MAKO_APPLICATION_PATH . '/storage/cache',
-		),
+		],
 
-		'memcache' => array
-		(
+		'memcache' => 
+		[
 			'type'          => 'memcache',
 			'identifier'    => MAKO_APPLICATION_ID,
 			'compress_data' => false,
 			'timeout'       => 1,
-			'servers'       => array
-			(
-				'server_1' => array
-				(
+			'servers'       => 
+			[
+				'server_1' => 
+				[
 					'server'                => 'localhost',
 					'port'                  => '11211',
 					'persistent_connection' => false,
 					'weight'                => 1,
-				),
-			),
-		),
+				],
+			],
+		],
 		
-		'memcached' => array
-		(
+		'memcached' => 
+		[
 			'type'          => 'memcached',
 			'identifier'    => MAKO_APPLICATION_ID,
 			'compress_data' => false,
 			'timeout'       => 1,
-			'servers'       => array
-			(
-				'server_1' => array
-				(
+			'servers'       => 
+			[
+				'server_1' => 
+				[
 					'server' => 'localhost',
 					'port'   => '11211',
 					'weight' => 1,
-				),
-			),
-		),
+				],
+			],
+		],
 		
-		'memory' => array
-		(
+		'memory' => 
+		[
 			'type' => 'memory',
-		),
+		],
 
-		'redis' => array
-		(
+		'redis' => 
+		[
 			'type'          => 'redis',
 			'identifier'    => MAKO_APPLICATION_ID,
 			'configuration' => 'cache',
-		),
+		],
 
-		'wincache' => array
-		(
+		'wincache' => 
+		[
 			'type'       => 'wincache',
 			'identifier' => MAKO_APPLICATION_ID,
-		),
+		],
 
-		'xcache' => array
-		(
+		'xcache' => 
+		[
 			'type'       => 'xcache',
 			'identifier' => MAKO_APPLICATION_ID,
 			'username'   => 'xcache',
 			'password'   => 'xcache',
-		),
+		],
 
-		'zenddisk' => array
-		(
+		'zenddisk' => 
+		[
 			'type'       => 'zenddisk',
 			'identifier' => MAKO_APPLICATION_ID,
-		),
+		],
 
-		'zendmemory' => array
-		(
+		'zendmemory' => 
+		[
 			'type'       => 'zendmemory',
 			'identifier' => MAKO_APPLICATION_ID,
-		),
-	),
-);
+		],
+	],
+];
 
 /** -------------------- End of file --------------------**/

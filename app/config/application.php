@@ -4,8 +4,8 @@
 // Application configuration
 //---------------------------------------------
 
-return array
-(
+return 
+[
 	/**
 	 * Base url of your application (without trailing slash).
 	 * The framework will try to autodetect the url if the value is left empty.
@@ -61,11 +61,11 @@ return array
 	 * then the corresponding language pack will be loaded.
 	 */
 
-	'languages' => array
-	(
+	'languages' => 
+	[
 		//'no' => 'nb_NO',
 		//'fr' => 'fr_FR',
-	),
+	],
 	
 	/**
 	 * Locale settings.
@@ -74,30 +74,30 @@ return array
 	 * lc_numeric: Set to true to set LC_NUMERIC to the locale you specified.
 	 */
 	
-	'locale' => array
-	(
-		'locales'    => array('en_US.UTF-8', 'en_US.utf8', 'C'),
+	'locale' => 
+	[
+		'locales'    => ['en_US.UTF-8', 'en_US.utf8', 'C'],
 		'lc_numeric' => false,
-	),
+	],
 
 	/**
 	 * Class aliases used by the autoloader.
 	 */
 
-	'aliases' => array
-	(
+	'aliases' => 
+	[
 		'URL'    => 'mako\http\routing\URL',
 		'Assets' => 'mako\utility\assets\Assets',
-	),
+	],
 
 	/**
 	 * Packages to initialize by default.
 	 */
 
-	'packages' => array
-	(
+	'packages' => 
+	[
 		
-	),
+	],
 
 	/**
 	 * Enable the debug toolbar?
@@ -135,12 +135,12 @@ return array
 	 * open_with     : Allows you to open the failing code with your preferred text editor.
 	 */
 	
-	'error_handler' => array
-	(
+	'error_handler' => 
+	[
 		'log_errors'     => true,
 		'display_errors' => true, // It is recommended to set this value to false when you are in production.
 		'open_with'      => 'sublime',
-	),
-);
+	],
+];
 
 /** -------------------- End of file --------------------**/

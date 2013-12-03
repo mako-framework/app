@@ -4,8 +4,8 @@
 // Session configuration
 //---------------------------------------------
 
-return array
-(
+return 
+[
 	/**
 	 * Default configuration to use.
 	 */
@@ -32,32 +32,32 @@ return array
 	 * table        : Name of the database table (only required when using "Database" sessions).
 	 */
 	
-	'configurations' => array
-	(
-		'database' => array
-		(
+	'configurations' => 
+	[
+		'database' => 
+		[
 			'type'          => 'Database',
 			'configuration' => 'test',
 			'table'         => 'mako_sessions',
-		),
+		],
 
-		'file' => array
-		(
+		'file' => 
+		[
 			'type' => 'File',
 			'path' => MAKO_APPLICATION_PATH . '/storage/sessions',
-		),
+		],
 
-		'native' => array
-		(
+		'native' => 
+		[
 			'type' => 'Native',
-		),
+		],
 
-		'redis' => array
-		(
+		'redis' => 
+		[
 			'type'          => 'Redis',
 			'configuration' => 'session',
-		),
-	),
-);
+		],
+	],
+];
 
 /** -------------------- End of file --------------------**/

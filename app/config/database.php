@@ -4,8 +4,8 @@
 // Database configuration
 //---------------------------------------------
 
-return array
-(
+return 
+[
 	/**
 	 * Default configuration to use.
 	 */
@@ -23,31 +23,31 @@ return array
 	 * queries    : (optional) Queries that will be executed right after a connection has been made
 	 */
 	
-	'configurations' => array
-	(
-		'test' => array
-		(
+	'configurations' => 
+	[
+		'test' => 
+		[
 			'dsn'         => 'mysql:dbname=test;host=localhost;port=3306',
 			'username'    => 'username',
 			'password'    => 'password',
 			'persistent'  => false,
 			'log_queries' => false,
-			'queries'     => array
-			(
+			'queries'     => 
+			[
 				"SET NAMES UTF8",
-			),
-		),
+			],
+		],
 
-		'sqlite' => array
-		(
+		'sqlite' => 
+		[
 			'dsn'         => 'sqlite:' . MAKO_APPLICATION_PATH . '/storage/database/test.sqlite',
 			'log_queries' => false,
-			'queries'     => array
-			(
+			'queries'     => 
+			[
 				"PRAGMA encoding = 'UTF-8'",
-			),
-		),	
-	),
-);
+			],
+		],	
+	],
+];
 
 /** -------------------- End of file --------------------**/

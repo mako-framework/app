@@ -4,8 +4,8 @@
 // Language file used by mako\Validate
 //---------------------------------------------
 
-return array
-(
+return 
+[
 	/**
 	 * Rule error messages.
 	 */
@@ -51,17 +51,17 @@ return array
 	 * Custom overrides.
 	 */
 
-	'overrides' => array
-	(
-		'fieldnames' => array
-		(
+	'overrides' => 
+	[
+		'fieldnames' => 
+		[
 			
-		),
-		'messages' => array
-		(
+		],
+		'messages' => 
+		[
 			
-		),
-	),
-);
+		],
+	],
+];
 
 /** -------------------- End of file --------------------**/

@@ -4,14 +4,14 @@
 // UserAgent configuration
 //---------------------------------------------
 
-return array
-(
+return 
+[
 	/**
 	 * Common mobile user agents.
 	 */
 	
-	'mobiles' => array
-	(
+	'mobiles' => 
+	[
 		'ipad',
 		'iphone',
 		'ipod',
@@ -43,14 +43,14 @@ return array
 		'pocket',
 		'mobile',
 		'phone',
-	),
+	],
 	
 	/**
 	 * Common robot/crawler user agents.
 	 */
 	
-	'robots' => array
-	(
+	'robots' => 
+	[
 		'googlebot',
 		'msnbot',
 		'slurp',
@@ -60,7 +60,7 @@ return array
 		'infoseek',
 		'lycos',
 		'ia_archiver',
-	)
-);
+	]
+];
 
 /** -------------------- End of file --------------------**/

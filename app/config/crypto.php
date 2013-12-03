@@ -4,8 +4,8 @@
 // Cryptography configuration
 //---------------------------------------------
 
-return array
-(
+return 
+[
 	/**
 	 * Default configuration to use.
 	 */
@@ -23,23 +23,23 @@ return array
 	 * mode   : Encryption mode (only required when using the "mcrypt" library).
 	 */
 	
-	'configurations' => array
-	(
-		'mcrypt' => array
-		(
+	'configurations' => 
+	[
+		'mcrypt' => 
+		[
 			'library' => 'mcrypt',
 			'cipher'  => MCRYPT_RIJNDAEL_256,
 			'key'     => '`F0=nYsPkxolnlyc+z6jcnRdulJEOfqIyMWwlxeYtnFPi[lKMb',
 			'mode'    => MCRYPT_MODE_ECB,
-		),
+		],
 
-		'openssl' => array
-		(
+		'openssl' => 
+		[
 			'library'  => 'openssl',
 			'cipher'   => 'AES-256-OFB',
 			'key'      => '`F0=nYsPkxolnlyc+z6jcnRdulJEOfqIyMWwlxeYtnFPi[lKMb',
-		),
-	),
-);
+		],
+	],
+];
 
 /** -------------------- End of file --------------------**/

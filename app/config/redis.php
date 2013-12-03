@@ -4,8 +4,8 @@
 // Redis configuration
 //---------------------------------------------
 
-return array
-(
+return 
+[
 	/**
 	 * Default configuration to use.
 	 */
@@ -21,32 +21,32 @@ return array
 	 * database: (optional) Database index to use for the connection.
 	 */
 
-	'configurations' => array
-	(
-		'localhost' => array
-		(
+	'configurations' => 
+	[
+		'localhost' => 
+		[
 			'host'     => 'localhost',
 			'port'     => 6379,
 			'password' => '',
 			'database' => 0,
-		),
+		],
 
-		'cache' => array
-		(
+		'cache' => 
+		[
 			'host'     => 'localhost',
 			'port'     => 6379,
 			'password' => '',
 			'database' => 1,
-		),
+		],
 
-		'session' => array
-		(
+		'session' => 
+		[
 			'host'     => 'localhost',
 			'port'     => 6379,
 			'password' => '',
 			'database' => 2,
-		),
-	)
-);
+		],
+	]
+];
 
 /** -------------------- End of file --------------------**/

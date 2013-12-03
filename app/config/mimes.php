@@ -4,8 +4,8 @@
 // Mime type list used by mako\File::mime()
 //---------------------------------------------
 
-return array
-(
+return 
+[
 	'aac'        => 'audio/aac',
 	'atom'       => 'application/atom+xml',
 	'avi'        => 'video/avi',
@@ -74,6 +74,6 @@ return array
 	'zip'        => 'application/zip',
 	'3gp'        => 'video/3gpp',
 	'3g2'        => 'video/3gpp2',
-);
+];
 
 /** -------------------- End of file --------------------**/

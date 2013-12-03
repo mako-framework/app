@@ -4,8 +4,8 @@
 // Logging configuration
 //---------------------------------------------
 
-return array
-(
+return 
+[
 	/**
 	 * Default configuration to use.
 	 */
@@ -25,31 +25,31 @@ return array
 	 * facility     : Specify what type of program is logging the message (only required when using "syslog" logs).
 	 */
 	
-	'configurations' => array
-	(
-		'file' => array
-		(
+	'configurations' => 
+	[
+		'file' => 
+		[
 			'type'  => 'file',
 			'path'  => MAKO_APPLICATION_PATH . '/storage/logs',
-		),
+		],
 		
-		'firephp' => array
-		(
+		'firephp' => 
+		[
 			'type' => 'firephp',
-		),
+		],
 
-		'syslog' => array
-		(
+		'syslog' => 
+		[
 			'type'       => 'syslog',
 			'identifier' => 'Mako Framework',
 			'facility'   => LOG_USER,
-		),
+		],
 		
-		'toolbar' => array
-		(
+		'toolbar' => 
+		[
 			'type' => 'toolbar',
-		),
-	),
-);
+		],
+	],
+];
 
 /** -------------------- End of file --------------------**/

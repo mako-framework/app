@@ -4,16 +4,16 @@
 // en_US inflection rules
 //---------------------------------------------
 
-return array
-(
+return 
+[
 	// Inflection rules
 
-	'rules' => array
-	(
+	'rules' => 
+	[
 		// Plural noun forms
 
-		'plural' => array
-		(
+		'plural' => 
+		[
 			'/(quiz)$/i'                     => "$1zes",
 			'/([m|l])ouse$/i'                => "$1ice",
 			'/(.+)(e|i)x$/'                  => "$1ices",
@@ -32,12 +32,12 @@ return array
 			'/((.*)(?<!hu))man$/i'           => "$1men",
 			'/s$/i'                          => "s",
 			'/$/'                            => "s",
-		),
+		],
 
 		// Irregular words
 
-		'irregular' => array
-		(
+		'irregular' => 
+		[
 			'alias'       => 'aliases',
 			'audio'       => 'audio',
 			'child'       => 'children',
@@ -56,8 +56,8 @@ return array
 			'sheep'       => 'sheep',
 			'species'     => 'species',
 			'tooth'       => 'teeth',
-		),
-	),
+		],
+	],
 
 	// Pluralization function
 
@@ -85,6 +85,6 @@ return array
 
 		return $word;
 	},
-);
+];
 
 /** -------------------- End of file --------------------**/

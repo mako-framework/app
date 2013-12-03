@@ -4,8 +4,8 @@
 // Pagination configuration
 //---------------------------------------------
 
-return array
-(
+return 
+[
 	/**
 	 * $_GET array key used for pagination.
 	 */
@@ -23,6 +23,6 @@ return array
 	 */
 	
 	'items_per_page' => 20,
-);
+];
 
 /** -------------------- End of file --------------------**/
