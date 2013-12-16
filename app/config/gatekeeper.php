@@ -28,7 +28,7 @@ return
 	 * Cookie options.
 	 */
 
-	'cookie_options' => 
+	'cookie_parameters' => 
 	[
 		/**
 		 * The path on the server in which the cookie will be available on.
