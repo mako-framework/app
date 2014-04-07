@@ -18,7 +18,7 @@ return
 	 * The supported cache types are: "apc", "database", "file", "memcache", "memcached", "memory", "redis", "wincache", "xcache", "zenddisk" and "zendmemory".
 	 *
 	 * type         : Cache type you want to use.
-	 * identifier   : Cache identifier that should be unique to your application to avoid conflicts.
+	 * prefix       : Cache prefix that should be unique to your application to avoid conflicts.
 	 * path         : Cache path (only required when using "file" cache).
 	 * compress_data: Compress stored items? (this requires zlib and is only available when using "memcache" or "memcached" cache).
 	 * timeout      : Value in seconds which will be used for connecting to the daemon (only required when using "memcache" or "memcached" cache).
@@ -33,14 +33,14 @@ return
 	[
 		'apc' => 
 		[
-			'type'       => 'apc',
-			'identifier' => MAKO_APPLICATION_ID,
+			'type'   => 'apc',
+			'prefix' => 'mako',
 		],
 
 		'database' => 
 		[
 			'type'          => 'database',
-			'identifier'    => MAKO_APPLICATION_ID,
+			'prefix'        => 'mako',
 			'configuration' => 'test',
 			'table'         => 'mako_cache',
 		],
@@ -48,14 +48,14 @@ return
 		'file' => 
 		[
 			'type'       => 'file',
-			'identifier' => MAKO_APPLICATION_ID,
+			'prefix'     => 'mako',
 			'path'       => MAKO_APPLICATION_PATH . '/storage/cache',
 		],
 
 		'memcache' => 
 		[
 			'type'          => 'memcache',
-			'identifier'    => MAKO_APPLICATION_ID,
+			'prefix'        => 'mako',
 			'compress_data' => false,
 			'timeout'       => 1,
 			'servers'       => 
@@ -73,7 +73,7 @@ return
 		'memcached' => 
 		[
 			'type'          => 'memcached',
-			'identifier'    => MAKO_APPLICATION_ID,
+			'prefix'        => 'mako',
 			'compress_data' => false,
 			'timeout'       => 1,
 			'servers'       => 
@@ -95,20 +95,20 @@ return
 		'redis' => 
 		[
 			'type'          => 'redis',
-			'identifier'    => MAKO_APPLICATION_ID,
+			'prefix'        => 'mako',
 			'configuration' => 'cache',
 		],
 
 		'wincache' => 
 		[
 			'type'       => 'wincache',
-			'identifier' => MAKO_APPLICATION_ID,
+			'prefix'     => 'mako',
 		],
 
 		'xcache' => 
 		[
 			'type'       => 'xcache',
-			'identifier' => MAKO_APPLICATION_ID,
+			'prefix'     => 'mako',
 			'username'   => 'xcache',
 			'password'   => 'xcache',
 		],
@@ -116,15 +116,14 @@ return
 		'zenddisk' => 
 		[
 			'type'       => 'zenddisk',
-			'identifier' => MAKO_APPLICATION_ID,
+			'prefix'     => 'mako',
 		],
 
 		'zendmemory' => 
 		[
 			'type'       => 'zendmemory',
-			'identifier' => MAKO_APPLICATION_ID,
+			'prefix'     => 'mako',
 		],
 	],
 ];
 
-/** -------------------- End of file --------------------**/

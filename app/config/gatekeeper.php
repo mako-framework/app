@@ -19,16 +19,10 @@ return
 	'user_model'  => '\mako\auth\models\User',
 
 	/**
-	 * The group model to use.
-	 */
-
-	'group_model' => '\mako\auth\models\Group',
-
-	/**
 	 * Cookie options.
 	 */
 
-	'cookie_parameters' => 
+	'cookie_options' => 
 	[
 		/**
 		 * The path on the server in which the cookie will be available on.
@@ -64,4 +58,3 @@ return
 	],
 ];
 
-/** -------------------- End of file --------------------**/

@@ -10,7 +10,7 @@ return
 	 * Default configuration to use.
 	 */
 	
-	'default' => 'native',
+	'default' => 'file',
 
 	/**
 	 * Session name. 
@@ -25,7 +25,7 @@ return
 	 * Cookie parameters.
 	 */
 
-	'cookie_parameters' => 
+	'cookie_options' => 
 	[
 		/**
 		 * The path on the server in which the cookie will be available on.
@@ -63,7 +63,7 @@ return
 	/**
 	 * You can define as many session configurations as you want.
 	 *
-	 * The supported session types are: "database", "file", "native" and "redis".
+	 * The supported session types are: "database", "file" and "redis".
 	 *
 	 * type         : Session type you want to use.
 	 * configuration: Database or redis configuration to use for sessions (only required when using "database" or "redis" sessions).
@@ -86,11 +86,6 @@ return
 			'path' => MAKO_APPLICATION_PATH . '/storage/sessions',
 		],
 
-		'native' => 
-		[
-			'type' => 'native',
-		],
-
 		'redis' => 
 		[
 			'type'          => 'redis',
@@ -99,4 +94,3 @@ return
 	],
 ];
 
-/** -------------------- End of file --------------------**/

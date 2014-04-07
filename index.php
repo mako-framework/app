@@ -1,5 +1,7 @@
 <?php
 
+use \mako\core\WebApplication;
+
 /**
  * Set which PHP errors are reported.
  * @see http://php.net/manual/en/function.error-reporting.php
@@ -22,9 +24,9 @@ ini_set('display_errors', true);
 define('MAKO_APPLICATION_PATH', __DIR__ . '/app');
 
 /**
- * Require the boot file and start the application.
+ * Require init file and run the application.
  */
 
-require __DIR__ . '/vendor/mako/framework/src/mako/boot.php';
+require __DIR__ . '/vendor/mako/framework/src/mako/init.php';
 
-(new mako\core\App)->run();
+WebApplication::start(MAKO_APPLICATION_PATH)->run();

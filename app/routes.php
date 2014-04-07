@@ -1,5 +1,3 @@
 <?php
 
-use \mako\http\routing\Routes;
-
-Routes::get('/', 'app\controllers\Index::welcome');
+$routes->get('/', 'app\controllers\Index::welcome');

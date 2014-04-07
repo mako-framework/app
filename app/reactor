@@ -1,5 +1,7 @@
 <?php
 
+use \mako\core\CLIApplication;
+
 /**
  * Set which PHP errors are reported.
  * @see http://php.net/manual/en/function.error-reporting.php
@@ -8,7 +10,9 @@
 error_reporting(E_ALL | E_STRICT);
 
 /**
- * Display errors?
+ * Choose if errors that are NOT caught by the Mako error and exception handlers should be 
+ * printed to the screen as part of the output or if they should be hidden from the user. 
+ * It is recommended to set this value to false when you are in production.
  */
 
 ini_set('display_errors', true);
@@ -20,9 +24,9 @@ ini_set('display_errors', true);
 define('MAKO_APPLICATION_PATH', __DIR__);
 
 /**
- * Require the boot file and start the application.
+ * Require init file and run the application.
  */
 
-require dirname(__DIR__) . '/vendor/mako/framework/src/mako/boot.php';
+require dirname(__DIR__) . '/vendor/mako/framework/src/mako/init.php';
 
-(new mako\reactor\Reactor)->run(array_slice($_SERVER['argv'], 1));
+CLIApplication::start(MAKO_APPLICATION_PATH)->run();

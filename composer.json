@@ -15,11 +15,9 @@
 		}
 	],
 	"autoload": {
-		"classmap": [
-			"app/controllers",
-			"app/models",
-			"app/tasks"
-		]
+		"psr-4": {
+			"app\\": "app"
+		}
 	},
 	"require": {
 		"php": ">=5.4.0",
