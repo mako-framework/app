@@ -119,7 +119,7 @@ return
 
 	'class_aliases' => 
 	[
-		//'URL'    => 'mako\proxies\URL',
+		//'URL' => 'mako\proxies\URL',
 	],
 ];
 
