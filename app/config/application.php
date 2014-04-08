@@ -112,5 +112,14 @@ return
 		'mako\core\services\PaginationFactoryService',
 		'mako\core\services\GatekeeperService',
 	],
+	
+	/**
+	 * Class aliases. The key is the alias and the value is the actual class.
+	 */
+
+	'class_aliases' => 
+	[
+		//'URL'    => 'mako\proxies\URL',
+	],
 ];
 
