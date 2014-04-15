@@ -7,10 +7,10 @@
 return 
 [
 	/**
-	 * Default configuration to use.
+	 * The configuration to use.
 	 */
 	
-	'default' => 'file',
+	'configuration' => 'file',
 
 	/**
 	 * Session name. 
