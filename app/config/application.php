@@ -66,7 +66,7 @@ return
 	/**
 	 * If your application isn't behind a proxy you trust then you can (and should) leave this empty.
 	 * If it is behind a proxy then you can help it return the correct client IP (using the X-Forwarded-For header) 
-	 * by listing you proxy IP address(es) here.
+	 * by listing your proxy IP address(es) here.
 	 */
 
 	'trusted_proxies' => 
