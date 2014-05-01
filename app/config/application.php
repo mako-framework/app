@@ -68,11 +68,17 @@ return
 	],
 
 	/**
-	 * Enable the debug toolbar?
-	 * Note that response cache using ETags might not work as expected when the debug toolbar is enabled.
+	 * Trusted proxies.
+	 * 
+	 * If your application isn't behind a proxy you trust then you can (and should) leave this empty.
+	 * If it is behind a proxy then you can help it return the correct client IP (using the X-Forwarded-For header) 
+	 * by listing you proxy IP address(es) here.
 	 */
 
-	'debug_toolbar' => false, // It is recommended to set this value to false when you are in production.
+	'trusted_proxies' => 
+	[
+		
+	],
 	
 	/**
 	 * Error handler settings.
@@ -122,4 +128,3 @@ return
 		//'URL' => 'mako\proxies\URL',
 	],
 ];
-
