@@ -34,18 +34,14 @@ return
 	'charset' => 'UTF-8',
 
 	/**
-	 * Default language.
-	 * 
 	 * Default language pack loaded by the i18n class.
 	 */
 
 	'default_language' => 'en_US',
 
 	/**
-	 * Languages.
-	 * 
-	 * If the first segment of the route matches the language 
-	 * then the corresponding language pack will be loaded.
+	 * If the first segment of the request path matches the language (array key) 
+	 * then the default language will be set to the mapped language (array value).
 	 */
 
 	'languages' => 
@@ -56,7 +52,7 @@ return
 	
 	/**
 	 * Locale settings.
-	 *
+	 * 
 	 * locales   : Array of locales to try until success. You can also set the value to "NULL" to use the default locale.
 	 * lc_numeric: Set to true to set LC_NUMERIC to the locale you specified.
 	 */
@@ -68,8 +64,6 @@ return
 	],
 
 	/**
-	 * Trusted proxies.
-	 * 
 	 * If your application isn't behind a proxy you trust then you can (and should) leave this empty.
 	 * If it is behind a proxy then you can help it return the correct client IP (using the X-Forwarded-For header) 
 	 * by listing you proxy IP address(es) here.
@@ -79,18 +73,16 @@ return
 	[
 		
 	],
-	
+
 	/**
-	 * Error handler settings.
-	 *
-	 * log_errors    : Set to true if you want to log errors caught by the Mako errors handler.
-	 * display_errors: Set to true to display errors caught by the mako error handlers.
+	 * Class aliases. 
+	 * 
+	 * The key is the alias and the value is the actual class.
 	 */
-	
-	'error_handler' => 
+
+	'class_aliases' => 
 	[
-		'log_errors'     => true,
-		'display_errors' => true, // It is recommended to set this value to false when you are in production.
+		
 	],
 
 	/**
@@ -118,13 +110,17 @@ return
 		'mako\core\services\PaginationFactoryService',
 		'mako\core\services\GatekeeperService',
 	],
-	
-	/**
-	 * Class aliases. The key is the alias and the value is the actual class.
-	 */
 
-	'class_aliases' => 
+	/**
+	 * Error handler settings.
+	 *
+	 * log_errors    : Set to true if you want to log errors caught by the Mako errors handler.
+	 * display_errors: Set to true to display errors caught by the mako error handlers.
+	 */
+	
+	'error_handler' => 
 	[
-		//'URL' => 'mako\proxies\URL',
+		'log_errors'     => true,
+		'display_errors' => true, // It is recommended to set this value to false when you are in production.
 	],
 ];
