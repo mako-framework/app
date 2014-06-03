@@ -21,7 +21,7 @@ class Index extends \mako\http\routing\Controller
 	 * 
 	 * @access  public
 	 * @param   \mako\http\Request      $request      Request instance
-	 * @param   \mako\http\Reqponse     $response     Response instance
+	 * @param   \mako\http\Response     $response     Response instance
 	 * @param   \mako\view\ViewFactory  $viewFactory  View factory instance
 	 */
 
