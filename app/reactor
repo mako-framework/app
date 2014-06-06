@@ -1,6 +1,6 @@
 <?php
 
-use \mako\core\CLIApplication;
+use \mako\application\CommandLine;
 
 /**
  * Set which PHP errors are reported.
@@ -29,4 +29,4 @@ define('MAKO_APPLICATION_PATH', __DIR__);
 
 require dirname(__DIR__) . '/vendor/mako/framework/src/mako/init.php';
 
-CLIApplication::start(MAKO_APPLICATION_PATH)->run();
+CommandLine::start(MAKO_APPLICATION_PATH)->run();

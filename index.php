@@ -1,6 +1,6 @@
 <?php
 
-use \mako\core\WebApplication;
+use \mako\application\Web;
 
 /**
  * Set which PHP errors are reported.
@@ -29,4 +29,4 @@ define('MAKO_APPLICATION_PATH', __DIR__ . '/app');
 
 require __DIR__ . '/vendor/mako/framework/src/mako/init.php';
 
-WebApplication::start(MAKO_APPLICATION_PATH)->run();
+Web::start(MAKO_APPLICATION_PATH)->run();
