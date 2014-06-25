@@ -16,7 +16,13 @@ return
 	 * The user model to use.
 	 */
 
-	'user_model'  => '\mako\auth\models\User',
+	'user_model'  => '\mako\auth\user\User',
+
+	/**
+	 * The user model to use.
+	 */
+
+	'group_model'  => '\mako\auth\group\Group',
 
 	/**
 	 * Cookie options.
