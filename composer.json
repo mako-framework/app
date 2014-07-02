@@ -32,5 +32,8 @@
 		"branch-alias": {
 			 "dev-master": "4.0-dev"
 		}
+	},
+	"suggest": {
+		"mako/toolbar": "Makes it easier to debug your application while its under development"
 	}
 }
