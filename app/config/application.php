@@ -55,7 +55,7 @@ return
 	 * reducing the number of files it has to load on every request.
 	 * 
 	 * Use the default cache store by setting the config value to TRUE and choose a specific cache configuration 
-	 * by specifing its name (as specified in the cache configuration).
+	 * by specifying its name (as specified in the cache configuration).
 	 */
 
 	'language_cache' => false,
