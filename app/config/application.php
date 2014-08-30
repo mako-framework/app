@@ -122,6 +122,15 @@ return
 	],
 
 	/**
+	 * Packages to boot. 
+	 */
+
+	'packages' => 
+	[
+		
+	],
+
+	/**
 	 * Error handler settings.
 	 *
 	 * log_errors    : Set to true if you want to log errors caught by the Mako errors handler.
