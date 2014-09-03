@@ -1,18 +1,22 @@
 <?php
 
-//---------------------------------------------
-// Cache configuration
-//---------------------------------------------
-
 return 
 [
 	/**
+	 * ---------------------------------------------------------
+	 * Default
+	 * ---------------------------------------------------------
+	 * 
 	 * Default configuration to use.
 	 */
 	
 	'default' => 'file',
 	
 	/**
+	 * ---------------------------------------------------------
+	 * Configurations
+	 * ---------------------------------------------------------
+	 * 
 	 * You can define as many cache configurations as you want.
 	 *
 	 * The supported cache types are: "apc", "database", "file", "memcache", "memcached", "memory", "redis", "wincache", "xcache", "zenddisk" and "zendmemory".

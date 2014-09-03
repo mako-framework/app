@@ -1,18 +1,22 @@
 <?php
 
-//---------------------------------------------
-// Cryptography configuration
-//---------------------------------------------
-
 return 
 [
 	/**
+	 * ---------------------------------------------------------
+	 * Default
+	 * ---------------------------------------------------------
+	 * 
 	 * Default configuration to use.
 	 */
 	
 	'default' => 'mcrypt',
 	
 	/**
+	 * ---------------------------------------------------------
+	 * Configurations
+	 * ---------------------------------------------------------
+	 * 
 	 * You can define as many cryptography configurations as you want.
 	 *
 	 * The supported cryptography libraries are: "mcrypt", and "openssl".

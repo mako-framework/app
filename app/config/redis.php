@@ -1,18 +1,22 @@
 <?php
 
-//---------------------------------------------
-// Redis configuration
-//---------------------------------------------
-
 return 
 [
 	/**
+	 * ---------------------------------------------------------
+	 * Default
+	 * ---------------------------------------------------------
+	 * 
 	 * Default configuration to use.
 	 */
 
 	'default' => 'localhost',
 
 	/**
+	 * ---------------------------------------------------------
+	 * Configurations
+	 * ---------------------------------------------------------
+	 * 
 	 * You can define as many Redis configurations as you want.
 	 *
 	 * host    : IP address or hostname of the Redis server.

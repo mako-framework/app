@@ -1,19 +1,21 @@
 <?php
 
-//---------------------------------------------
-// Session configuration
-//---------------------------------------------
-
 return 
 [
 	/**
+	 * ---------------------------------------------------------
+	 * Confifuration
+	 * ---------------------------------------------------------
+	 * 
 	 * The configuration to use.
 	 */
 	
 	'configuration' => 'file',
 
 	/**
-	 * Session name. 
+	 * ---------------------------------------------------------
+	 * Session name
+	 * ---------------------------------------------------------
 	 * 
 	 * Using a unique session name will prevent session collisions with other applications.
 	 * Note that only alphanumeric characters can be used in the session name.
@@ -22,7 +24,9 @@ return
 	'session_name' => 'mako_session',
 
 	/**
-	 * Cookie parameters.
+	 * ---------------------------------------------------------
+	 * Cookie options
+	 * ---------------------------------------------------------
 	 */
 
 	'cookie_options' => 
@@ -61,6 +65,10 @@ return
 	],
 	
 	/**
+	 * ---------------------------------------------------------
+	 * Configurations
+	 * ---------------------------------------------------------
+	 * 
 	 * You can define as many session configurations as you want.
 	 *
 	 * The supported session types are: "database", "file" and "redis".
