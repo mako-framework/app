@@ -34,7 +34,7 @@ return
 			'library' => 'mcrypt',
 			'cipher'  => MCRYPT_RIJNDAEL_256,
 			'key'     => '`F0=nYsPkxolnlyc+z6jcnRdulJEOfqIyMWwlxeYtnFPi[lKMb',
-			'mode'    => MCRYPT_MODE_ECB,
+			'mode'    => MCRYPT_MODE_CBC,
 		],
 
 		'openssl' => 
