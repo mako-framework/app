@@ -69,6 +69,10 @@ return
 	],
 
 	/**
+	 * ---------------------------------------------------------
+	 * Language cache
+	 * ---------------------------------------------------------
+	 * 
 	 * Enabling language caching can speed up applications with a lot of language files by
 	 * reducing the number of files it has to load on every request.
 	 * 
