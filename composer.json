@@ -21,7 +21,7 @@
 	},
 	"require": {
 		"php": ">=5.4.0",
-		"mako/framework": "4.2.*"
+		"mako/framework": "4.3.*"
 	},
 	"config": {
 	    "preferred-install": "dist"
@@ -30,7 +30,7 @@
 	"prefer-stable": true,
 	"extra": {
 		"branch-alias": {
-			 "dev-master": "4.2-dev"
+			 "dev-master": "4.3-dev"
 		}
 	},
 	"suggest": {
