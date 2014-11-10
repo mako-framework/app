@@ -1,3 +1,6 @@
 <?php
 
-$routes->get('/', 'app\controllers\Index::welcome');
+$routes->group(['namespace' => 'app\controllers'], function($routes)
+{
+	$routes->get('/', 'Index::welcome');
+});
