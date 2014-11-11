@@ -2,9 +2,10 @@
 
 namespace app\controllers;
 
+use \mako\http\routing\Controller;
 use \mako\view\ViewFactory;
 
-class Index extends \mako\http\routing\Controller
+class Index extends Controller
 {
 	/**
 	 * Welcome route.
