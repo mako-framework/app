@@ -20,7 +20,7 @@
 		}
 	},
 	"require": {
-		"php": ">=5.4.0",
+		"php": ">=5.5.0",
 		"mako/framework": "4.3.*"
 	},
 	"config": {
