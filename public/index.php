@@ -21,12 +21,12 @@ ini_set('display_errors', true);
  * Define the path to the app directory (without trailing slash).
  */
 
-define('MAKO_APPLICATION_PATH', __DIR__ . '/app');
+define('MAKO_APPLICATION_PATH', dirname(__DIR__) . '/app');
 
 /**
  * Require init file and run the application.
  */
 
-require __DIR__ . '/vendor/mako/framework/src/mako/init.php';
+require dirname(__DIR__) . '/vendor/mako/framework/src/mako/init.php';
 
 Web::start(MAKO_APPLICATION_PATH)->run();
