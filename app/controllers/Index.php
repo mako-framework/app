@@ -2,8 +2,8 @@
 
 namespace app\controllers;
 
-use \mako\http\routing\Controller;
-use \mako\view\ViewFactory;
+use mako\http\routing\Controller;
+use mako\view\ViewFactory;
 
 class Index extends Controller
 {
