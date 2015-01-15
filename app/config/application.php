@@ -112,33 +112,64 @@ return
 
 	/**
 	 * ---------------------------------------------------------
+	 * Commands
+	 * ---------------------------------------------------------
+	 * 
+	 * This is where you register your reactor commands. 
+	 * The array key is the command name and the array value 
+	 * is the command class.
+	 */
+
+	'commands' => 
+	[
+		'test' => 'app\commands\Test',
+	],
+
+	/**
+	 * ---------------------------------------------------------
 	 * Services
 	 * ---------------------------------------------------------
 	 * 
 	 * Services to register in the dependecy injection container.
 	 * They will be registered in the order that they are defined.
+	 * 
+	 * core: Services that are required for both the web an the command line interface
+	 * web : Services that are only required for the web
+	 * cli : Services that are only required for the command line interface
 	 */
 
 	'services' => 
 	[
-		'mako\application\services\ErrorHandlerService',
-		'mako\application\services\RequestService',
-		'mako\application\services\ResponseService',
-		'mako\application\services\SignerService',
-		'mako\application\services\RouteService',
-		'mako\application\services\URLBuilderService',
-		'mako\application\services\LoggerService',
-		'mako\application\services\ViewFactoryService',
-		'mako\application\services\SessionService',
-		'mako\application\services\DatabaseService',
-		'mako\application\services\RedisService',
-		'mako\application\services\I18nService',
-		'mako\application\services\HumanizerService',
-		'mako\application\services\CacheService',
-		'mako\application\services\CryptoService',
-		'mako\application\services\ValidatorFactoryService',
-		'mako\application\services\PaginationFactoryService',
-		'mako\application\services\GatekeeperService',
+		'core' => 
+		[
+			'mako\application\services\RequestService',
+			'mako\application\services\ResponseService',
+			'mako\application\services\SignerService',
+			'mako\application\services\RouteService',
+			'mako\application\services\URLBuilderService',
+			'mako\application\services\LoggerService',
+			'mako\application\services\ViewFactoryService',
+			'mako\application\services\SessionService',
+			'mako\application\services\DatabaseService',
+			'mako\application\services\RedisService',
+			'mako\application\services\I18nService',
+			'mako\application\services\HumanizerService',
+			'mako\application\services\CacheService',
+			'mako\application\services\CryptoService',
+			'mako\application\services\ValidatorFactoryService',
+			'mako\application\services\PaginationFactoryService',
+			'mako\application\services\GatekeeperService',
+		],
+		'web' => 
+		[
+			'mako\application\services\web\ErrorHandlerService',
+		],
+		'cli' => 
+		[
+			'mako\application\services\cli\InputService',
+			'mako\application\services\cli\OutputService',
+			'mako\application\services\cli\ErrorHandlerService',
+		]
 	],
 
 	/**
