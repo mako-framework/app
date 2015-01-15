@@ -122,7 +122,7 @@ return
 
 	'commands' => 
 	[
-		'test' => 'app\commands\Test',
+		
 	],
 
 	/**
