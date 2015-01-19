@@ -14,8 +14,11 @@ return
 
 	/**
 	 * ---------------------------------------------------------
-	 * Auth key
+	 * Auth key name
 	 * ---------------------------------------------------------
+	 * 
+	 * Name of the session variable and cookie that holds the authentication key. 
+	 * Using a unique key name name will prevent session collisions with other applications.
 	 */
 	
 	'auth_key' => 'gatekeeper_auth_key',
