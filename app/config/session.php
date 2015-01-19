@@ -14,14 +14,29 @@ return
 
 	/**
 	 * ---------------------------------------------------------
-	 * Session name
+	 * Session (cookie) name
 	 * ---------------------------------------------------------
 	 * 
 	 * Using a unique session name will prevent session collisions with other applications.
-	 * Note that only alphanumeric characters can be used in the session name.
 	 */
 
 	'session_name' => 'mako_session',
+
+	/**
+	 * ---------------------------------------------------------
+	 * Time to live
+	 * ---------------------------------------------------------
+	 * 
+	 * Set the time to live of session data and cookies in seconds.
+	 * Note that a time to live of 0 seconds for cookies mean that they 
+	 * expire at the end of the session (when the browser closes).
+	 */
+
+	'ttl' => 
+	[
+		'data'   => 1800,
+		'cookie' => 0,
+	],
 
 	/**
 	 * ---------------------------------------------------------
