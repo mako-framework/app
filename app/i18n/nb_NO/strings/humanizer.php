@@ -4,7 +4,7 @@
 // Language file used by mako\utility\Humanizer
 //---------------------------------------------
 
-return 
+return
 [
 	'yesterday'   => 'i går',
 	'today'       => 'i dag',

@@ -1,22 +1,22 @@
 <?php
 
-return 
+return
 [
 	/**
 	 * ---------------------------------------------------------
 	 * Confifuration
 	 * ---------------------------------------------------------
-	 * 
+	 *
 	 * The configuration to use.
 	 */
-	
+
 	'configuration' => 'file',
 
 	/**
 	 * ---------------------------------------------------------
 	 * Session (cookie) name
 	 * ---------------------------------------------------------
-	 * 
+	 *
 	 * Using a unique session name will prevent session collisions with other applications.
 	 */
 
@@ -26,13 +26,13 @@ return
 	 * ---------------------------------------------------------
 	 * Time to live
 	 * ---------------------------------------------------------
-	 * 
+	 *
 	 * Set the time to live of session data and cookies in seconds.
-	 * Note that a time to live of 0 seconds for cookies mean that they 
+	 * Note that a time to live of 0 seconds for cookies mean that they
 	 * expire at the end of the session (when the browser closes).
 	 */
 
-	'ttl' => 
+	'ttl' =>
 	[
 		'data'   => 1800,
 		'cookie' => 0,
@@ -44,11 +44,11 @@ return
 	 * ---------------------------------------------------------
 	 */
 
-	'cookie_options' => 
+	'cookie_options' =>
 	[
 		/**
 		 * The path on the server in which the cookie will be available on.
-		 * If set to '/', the cookie will be available within the entire domain. 
+		 * If set to '/', the cookie will be available within the entire domain.
 		 * If set to '/foo/', the cookie will only be available within the /foo/ directory and all sub-directories.
 		 */
 
@@ -62,28 +62,28 @@ return
 		'domain' => '',
 
 		/**
-		 * Indicates that the cookie should only be transmitted over a secure HTTPS connection from the client. When set to TRUE, 
-		 * the cookie will only be set if a secure connection exists. On the server-side, it's on the programmer to send this kind of cookie 
+		 * Indicates that the cookie should only be transmitted over a secure HTTPS connection from the client. When set to TRUE,
+		 * the cookie will only be set if a secure connection exists. On the server-side, it's on the programmer to send this kind of cookie
 		 * only on secure connection (e.g. with respect to $this->request->secure()).
 		 */
 
 		'secure' => false,
 
 		/**
-		 * When TRUE the cookie will be made accessible only through the HTTP protocol. 
-		 * This means that the cookie won't be accessible by scripting languages, such as JavaScript. 
-		 * It has been suggested that this setting can effectively help to reduce identity theft through XSS attacks 
+		 * When TRUE the cookie will be made accessible only through the HTTP protocol.
+		 * This means that the cookie won't be accessible by scripting languages, such as JavaScript.
+		 * It has been suggested that this setting can effectively help to reduce identity theft through XSS attacks
 		 * (although it is not supported by all browsers), but that claim is often disputed.
 		 */
-		
+
 		'httponly' => false,
 	],
-	
+
 	/**
 	 * ---------------------------------------------------------
 	 * Configurations
 	 * ---------------------------------------------------------
-	 * 
+	 *
 	 * You can define as many session configurations as you want.
 	 *
 	 * The supported session types are: "database", "file", "null" and "redis".
@@ -93,28 +93,28 @@ return
 	 * path         : Save path for session files (only required when using "file" sessions).
 	 * table        : Name of the database table (only required when using "database" sessions).
 	 */
-	
-	'configurations' => 
+
+	'configurations' =>
 	[
-		'database' => 
+		'database' =>
 		[
 			'type'          => 'database',
 			'configuration' => 'test',
 			'table'         => 'mako_sessions',
 		],
 
-		'file' => 
+		'file' =>
 		[
 			'type' => 'file',
 			'path' => MAKO_APPLICATION_PATH . '/storage/sessions',
 		],
 
-		'null' => 
+		'null' =>
 		[
 			'type' => 'null',
 		],
 
-		'redis' => 
+		'redis' =>
 		[
 			'type'          => 'redis',
 			'configuration' => 'session',

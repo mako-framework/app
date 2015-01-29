@@ -9,7 +9,7 @@ class Index extends Controller
 {
 	/**
 	 * Welcome route.
-	 * 
+	 *
 	 * @access  public
 	 */
 

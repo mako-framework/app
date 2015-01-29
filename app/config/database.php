@@ -1,22 +1,22 @@
 <?php
 
-return 
+return
 [
 	/**
 	 * ---------------------------------------------------------
 	 * Default
 	 * ---------------------------------------------------------
-	 * 
+	 *
 	 * Default configuration to use.
 	 */
-	
+
 	'default' => 'test',
-	
+
 	/**
 	 * ---------------------------------------------------------
 	 * Configurations
 	 * ---------------------------------------------------------
-	 * 
+	 *
 	 * You can define as many database configurations as you want.
 	 *
 	 * dsn        : PDO data source name
@@ -27,10 +27,10 @@ return
 	 * reconnect  : (optional) Should the connection automatically be reestablished?
 	 * queries    : (optional) Queries that will be executed right after a connection has been made
 	 */
-	
-	'configurations' => 
+
+	'configurations' =>
 	[
-		'test' => 
+		'test' =>
 		[
 			'dsn'         => 'mysql:dbname=test;host=localhost;port=3306',
 			'username'    => 'username',
@@ -38,21 +38,21 @@ return
 			'persistent'  => false,
 			'log_queries' => false,
 			'reconnect'   => false,
-			'queries'     => 
+			'queries'     =>
 			[
 				"SET NAMES UTF8",
 			],
 		],
 
-		'sqlite' => 
+		'sqlite' =>
 		[
 			'dsn'         => 'sqlite:' . MAKO_APPLICATION_PATH . '/storage/database/test.sqlite',
 			'log_queries' => false,
 			'reconnect'   => false,
-			'queries'     => 
+			'queries'     =>
 			[
 				"PRAGMA encoding = 'UTF-8'",
 			],
-		],	
+		],
 	],
 ];

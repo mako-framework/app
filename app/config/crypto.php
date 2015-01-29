@@ -1,22 +1,22 @@
 <?php
 
-return 
+return
 [
 	/**
 	 * ---------------------------------------------------------
 	 * Default
 	 * ---------------------------------------------------------
-	 * 
+	 *
 	 * Default configuration to use.
 	 */
-	
+
 	'default' => 'mcrypt',
-	
+
 	/**
 	 * ---------------------------------------------------------
 	 * Configurations
 	 * ---------------------------------------------------------
-	 * 
+	 *
 	 * You can define as many cryptography configurations as you want.
 	 *
 	 * The supported cryptography libraries are: "mcrypt", and "openssl".
@@ -26,10 +26,10 @@ return
 	 * key    : Key used to encrypt/decrypt data. You should NOT use the key included with the framework in a production environment!
 	 * mode   : Encryption mode (only required when using the "mcrypt" library).
 	 */
-	
-	'configurations' => 
+
+	'configurations' =>
 	[
-		'mcrypt' => 
+		'mcrypt' =>
 		[
 			'library' => 'mcrypt',
 			'cipher'  => MCRYPT_RIJNDAEL_256,
@@ -37,7 +37,7 @@ return
 			'mode'    => MCRYPT_MODE_CBC,
 		],
 
-		'openssl' => 
+		'openssl' =>
 		[
 			'library'  => 'openssl',
 			'cipher'   => 'AES-256-OFB',

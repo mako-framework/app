@@ -4,15 +4,15 @@
 // en_US inflection rules
 //---------------------------------------------
 
-return 
+return
 [
 	// Inflection rules
 
-	'rules' => 
+	'rules' =>
 	[
 		// Plural noun forms
 
-		'plural' => 
+		'plural' =>
 		[
 			'/(quiz)$/i'                     => "$1zes",
 			'/([m|l])ouse$/i'                => "$1ice",
@@ -36,7 +36,7 @@ return
 
 		// Irregular words
 
-		'irregular' => 
+		'irregular' =>
 		[
 			'alias'       => 'aliases',
 			'audio'       => 'audio',

@@ -8,8 +8,8 @@
 error_reporting(E_ALL | E_STRICT);
 
 /**
- * Choose if errors that are NOT caught by the Mako error and exception handlers should be 
- * printed to the screen as part of the output or if they should be hidden from the user. 
+ * Choose if errors that are NOT caught by the Mako error and exception handlers should be
+ * printed to the screen as part of the output or if they should be hidden from the user.
  * It is recommended to set this value to false when you are in production.
  */
 

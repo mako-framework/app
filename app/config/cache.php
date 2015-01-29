@@ -1,22 +1,22 @@
 <?php
 
-return 
+return
 [
 	/**
 	 * ---------------------------------------------------------
 	 * Default
 	 * ---------------------------------------------------------
-	 * 
+	 *
 	 * Default configuration to use.
 	 */
-	
+
 	'default' => 'file',
-	
+
 	/**
 	 * ---------------------------------------------------------
 	 * Configurations
 	 * ---------------------------------------------------------
-	 * 
+	 *
 	 * You can define as many cache configurations as you want.
 	 *
 	 * The supported cache types are: "apc", "database", "file", "memcache", "memcached", "memory", "redis", "wincache", "xcache", "zenddisk" and "zendmemory".
@@ -32,16 +32,16 @@ return
 	 * username     : Cache username (only required when using "xcache" cache).
 	 * password     : Cache password (only required when using "xcache" cache).
 	 */
-	
-	'configurations' => 
+
+	'configurations' =>
 	[
-		'apc' => 
+		'apc' =>
 		[
 			'type'   => 'apc',
 			'prefix' => 'mako',
 		],
 
-		'database' => 
+		'database' =>
 		[
 			'type'          => 'database',
 			'prefix'        => 'mako',
@@ -49,22 +49,22 @@ return
 			'table'         => 'mako_cache',
 		],
 
-		'file' => 
+		'file' =>
 		[
 			'type'       => 'file',
 			'prefix'     => 'mako',
 			'path'       => MAKO_APPLICATION_PATH . '/storage/cache',
 		],
 
-		'memcache' => 
+		'memcache' =>
 		[
 			'type'          => 'memcache',
 			'prefix'        => 'mako',
 			'compress_data' => false,
 			'timeout'       => 1,
-			'servers'       => 
+			'servers'       =>
 			[
-				'server_1' => 
+				'server_1' =>
 				[
 					'server'                => 'localhost',
 					'port'                  => '11211',
@@ -73,16 +73,16 @@ return
 				],
 			],
 		],
-		
-		'memcached' => 
+
+		'memcached' =>
 		[
 			'type'          => 'memcached',
 			'prefix'        => 'mako',
 			'compress_data' => false,
 			'timeout'       => 1,
-			'servers'       => 
+			'servers'       =>
 			[
-				'server_1' => 
+				'server_1' =>
 				[
 					'server' => 'localhost',
 					'port'   => '11211',
@@ -90,26 +90,26 @@ return
 				],
 			],
 		],
-		
-		'memory' => 
+
+		'memory' =>
 		[
 			'type' => 'memory',
 		],
 
-		'redis' => 
+		'redis' =>
 		[
 			'type'          => 'redis',
 			'prefix'        => 'mako',
 			'configuration' => 'cache',
 		],
 
-		'wincache' => 
+		'wincache' =>
 		[
 			'type'       => 'wincache',
 			'prefix'     => 'mako',
 		],
 
-		'xcache' => 
+		'xcache' =>
 		[
 			'type'       => 'xcache',
 			'prefix'     => 'mako',
@@ -117,13 +117,13 @@ return
 			'password'   => 'xcache',
 		],
 
-		'zenddisk' => 
+		'zenddisk' =>
 		[
 			'type'       => 'zenddisk',
 			'prefix'     => 'mako',
 		],
 
-		'zendmemory' => 
+		'zendmemory' =>
 		[
 			'type'       => 'zendmemory',
 			'prefix'     => 'mako',

@@ -1,12 +1,12 @@
 <?php
 
-return 
+return
 [
 	/**
 	 * ---------------------------------------------------------
 	 * Default
 	 * ---------------------------------------------------------
-	 * 
+	 *
 	 * Default configuration to use.
 	 */
 
@@ -16,7 +16,7 @@ return
 	 * ---------------------------------------------------------
 	 * Configurations
 	 * ---------------------------------------------------------
-	 * 
+	 *
 	 * You can define as many Redis configurations as you want.
 	 *
 	 * host    : IP address or hostname of the Redis server.
@@ -25,9 +25,9 @@ return
 	 * database: (optional) Database index to use for the connection.
 	 */
 
-	'configurations' => 
+	'configurations' =>
 	[
-		'localhost' => 
+		'localhost' =>
 		[
 			'host'     => 'localhost',
 			'port'     => 6379,
@@ -35,7 +35,7 @@ return
 			'database' => 0,
 		],
 
-		'cache' => 
+		'cache' =>
 		[
 			'host'     => 'localhost',
 			'port'     => 6379,
@@ -43,7 +43,7 @@ return
 			'database' => 1,
 		],
 
-		'session' => 
+		'session' =>
 		[
 			'host'     => 'localhost',
 			'port'     => 6379,

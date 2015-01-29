@@ -4,7 +4,7 @@
 // Language file used by mako\Validate
 //---------------------------------------------
 
-return 
+return
 [
 	/**
 	 * Rule error messages.
@@ -51,15 +51,15 @@ return
 	 * Custom overrides.
 	 */
 
-	'overrides' => 
+	'overrides' =>
 	[
-		'fieldnames' => 
+		'fieldnames' =>
 		[
-			
+
 		],
-		'messages' => 
+		'messages' =>
 		[
-			
+
 		],
 	],
 ];

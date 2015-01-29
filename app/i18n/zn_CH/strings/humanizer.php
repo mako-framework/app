@@ -4,7 +4,7 @@
 // Language file used by mako\utility\Humanizer
 //---------------------------------------------
 
-return 
+return
 [
 	'yesterday'   => '昨天',
 	'today'       => '今天',

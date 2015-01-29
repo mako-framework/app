@@ -4,12 +4,12 @@
 // Language file used by mako\Validate
 //---------------------------------------------
 
-return 
+return
 [
 	/**
 	 * Rule error messages.
 	 */
-	
+
 	'required'                 => '%1$sfeltet er obligatorisk.',
 	'min_length'               => '%1$s må være minst %2$s tegn langt.',
 	'max_length'               => '%1$s må være kortere enn %2$s tegn.',
@@ -51,15 +51,15 @@ return
 	 * Custom overrides.
 	 */
 
-	'overrides' => 
+	'overrides' =>
 	[
-		'fieldnames' => 
+		'fieldnames' =>
 		[
-			
+
 		],
-		'messages' => 
+		'messages' =>
 		[
-			
+
 		],
 	],
 ];
