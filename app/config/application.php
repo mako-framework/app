@@ -179,11 +179,26 @@ return
 	 *
 	 * Packages to boot during the application boot sequence.
 	 * They will be booted in the order that they are defined.
+	 *
+	 * core: Packages that are required for both the web an the command line interface
+	 * web : Packages that are only required for the web
+	 * cli : Packages that are only required for the command line interface
 	 */
 
 	'packages' =>
 	[
+		'core' =>
+		[
 
+		],
+		'web' =>
+		[
+
+		],
+		'cli' =>
+		[
+
+		]
 	],
 
 	/**
