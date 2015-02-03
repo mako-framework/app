@@ -21,7 +21,7 @@
 	},
 	"require": {
 		"php": ">=5.5.0",
-		"mako/framework": "4.5.*"
+		"mako/framework": "4.4.*"
 	},
 	"config": {
 	    "preferred-install": "dist"
