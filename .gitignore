@@ -4,3 +4,4 @@ composer.lock
 /vendor
 /app/storage/console_history
 /app/storage/offline
+/node_modules
