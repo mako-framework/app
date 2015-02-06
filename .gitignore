@@ -5,3 +5,4 @@ composer.lock
 /app/storage/console_history
 /app/storage/offline
 /node_modules
+npm-debug.log
