@@ -122,7 +122,7 @@ return
 
 	'commands' =>
 	[
-
+		'greeting' => 'app\console\commands\Greeting',
 	],
 
 	/**
@@ -159,6 +159,8 @@ return
 			'mako\application\services\ValidatorFactoryService',
 			'mako\application\services\PaginationFactoryService',
 			'mako\application\services\GatekeeperService',
+			//'mako\application\services\EventService',
+			//'mako\application\services\CommandBusService',
 		],
 		'web' =>
 		[
