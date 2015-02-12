@@ -4,22 +4,22 @@
 // ru_RU inflection rules
 //---------------------------------------------
 
-return 
+return
 [
 	// Inflection rules
 
-	'rules' => 
+	'rules' =>
 	[
 		// Plural noun forms
 
-		'plural' => 
+		'plural' =>
 		[
 
 		],
 
 		// Irregular words
 
-		'irregular' => 
+		'irregular' =>
 		[
 			// '1' => '...', '1' => ['0', '2'] or '1' => ['0', '2', '...']
 
