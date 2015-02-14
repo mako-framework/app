@@ -77,6 +77,6 @@ return
 		 * (although it is not supported by all browsers), but that claim is often disputed.
 		 */
 
-		'httponly' => false,
+		'httponly' => true,
 	],
 ];
