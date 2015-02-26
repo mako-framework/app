@@ -27,12 +27,12 @@ ini_set('error_log', __DIR__ . '/storage/logs/error_' . gmdate('Y_m_d') . '.log'
 
 set_error_handler(function($code, $message, $file, $line)
 {
-        if((error_reporting() & $code) !== 0)
-        {
-                throw new ErrorException($message, $code, 0, $file, $line);
-        }
+	if((error_reporting() & $code) !== 0)
+	{
+		throw new ErrorException($message, $code, 0, $file, $line);
+	}
 
-        return true;
+	return true;
 });
 
 /**
