@@ -10,7 +10,7 @@ return
 	 * Default configuration to use.
 	 */
 
-	'default' => 'mcrypt',
+	'default' => 'openssl',
 
 	/**
 	 * ---------------------------------------------------------
