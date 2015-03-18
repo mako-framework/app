@@ -29,7 +29,7 @@ return
 	 * ---------------------------------------------------------
 	 */
 
-	'user_model'  => '\mako\auth\user\User',
+	'user_model'  => 'mako\auth\user\User',
 
 	/**
 	 * ---------------------------------------------------------
@@ -37,7 +37,7 @@ return
 	 * ---------------------------------------------------------
 	 */
 
-	'group_model'  => '\mako\auth\group\Group',
+	'group_model'  => 'mako\auth\group\Group',
 
 	/**
 	 * ---------------------------------------------------------
@@ -45,7 +45,7 @@ return
 	 * ---------------------------------------------------------
 	 */
 
-	'brute_force_throttling' =>
+	'throttling' =>
 	[
 		/**
 		 * Set to TRUE to enable brute force throttling.
