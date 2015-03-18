@@ -41,6 +41,33 @@ return
 
 	/**
 	 * ---------------------------------------------------------
+	 * Brute force throttling
+	 * ---------------------------------------------------------
+	 */
+
+	'brute_force_throttling' =>
+	[
+		/**
+		 * Set to TRUE to enable brute force throttling.
+		 */
+
+		'enabled' => true,
+
+		/**
+		 * Maximum number of attempts before the account gets temporarily locked.
+		 */
+
+		'max_attemps' => 5,
+
+		/**
+		 * Number of seconds for which the account gets locked after reaching the maximum number of login attempts.
+		 */
+
+		'lock_time' => 60 * 5
+	],
+
+	/**
+	 * ---------------------------------------------------------
 	 * Cookie options
 	 * ---------------------------------------------------------
 	 */
