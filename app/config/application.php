@@ -142,11 +142,7 @@ return
 	[
 		'core' =>
 		[
-			'mako\application\services\RequestService',
-			'mako\application\services\ResponseService',
-			'mako\application\services\SignerService',
-			'mako\application\services\RouteService',
-			'mako\application\services\URLBuilderService',
+			'mako\application\services\HTTPService',
 			'mako\application\services\LoggerService',
 			'mako\application\services\ViewFactoryService',
 			'mako\application\services\SessionService',
