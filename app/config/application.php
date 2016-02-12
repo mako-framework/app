@@ -142,6 +142,7 @@ return
 	[
 		'core' =>
 		[
+			'mako\application\services\SignerService',
 			'mako\application\services\HTTPService',
 			'mako\application\services\LoggerService',
 			'mako\application\services\ViewFactoryService',
