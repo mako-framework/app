@@ -7,7 +7,6 @@ use mako\reactor\Command;
 /**
  * Greeting command.
  */
-
 class Greeting extends Command
 {
 	/**
@@ -15,7 +14,6 @@ class Greeting extends Command
 	 *
 	 * @var array
 	 */
-
 	protected $commandInformation =
 	[
 		'description' => 'Greets the user.'
@@ -26,7 +24,6 @@ class Greeting extends Command
 	 *
 	 * @access  public
 	 */
-
 	public function execute()
 	{
 		$this->write('<blue>Hello, world!</blue>');

@@ -8,7 +8,6 @@ use mako\view\ViewFactory;
 /**
  * Welcome controller.
  */
-
 class Index extends Controller
 {
 	/**
@@ -18,7 +17,6 @@ class Index extends Controller
 	 * @param   \mako\view\ViewFactory  $view  View factory
 	 * @return  string
 	 */
-
 	public function welcome(ViewFactory $view)
 	{
 		return $view->create('welcome');
