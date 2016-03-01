@@ -196,7 +196,7 @@ return
 	 * Set to FALSE for none and TRUE for all.
 	 */
 
-	'serialization_whitelist' => false,
+	'deserialization_whitelist' => false,
 
 	/**
 	 * ---------------------------------------------------------
