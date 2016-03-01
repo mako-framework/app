@@ -81,6 +81,17 @@ return
 
 	/**
 	 * ---------------------------------------------------------
+	 * Class whitelist.
+	 * ---------------------------------------------------------
+	 *
+	 * Array of classes that you'll allow the application to deserialize.
+	 * Set to FALSE for none and TRUE for all.
+	 */
+
+	'class_whitelist' => false,
+
+	/**
+	 * ---------------------------------------------------------
 	 * Configurations
 	 * ---------------------------------------------------------
 	 *
