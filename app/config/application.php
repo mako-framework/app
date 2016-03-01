@@ -189,14 +189,14 @@ return
 
 	/**
 	 * ---------------------------------------------------------
-	 * Class whitelist.
+	 * Serialization whitelist.
 	 * ---------------------------------------------------------
 	 *
 	 * Array of classes that you'll allow the framework to deserialize.
 	 * Set to FALSE for none and TRUE for all.
 	 */
 
-	'class_whitelist' => false,
+	'serialization_whitelist' => false,
 
 	/**
 	 * ---------------------------------------------------------
