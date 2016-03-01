@@ -14,17 +14,6 @@ return
 
 	/**
 	 * ---------------------------------------------------------
-	 * Secret
-	 * ---------------------------------------------------------
-	 *
-	 * The secret is used to provide cryptographic signing, and should be set to a unique, unpredictable value.
-	 * You should NOT use the secret included with the framework in a production environment!
-	 */
-
-	'secret' => '2fd0af1675adbdfb53804f6ad541d6d1b76638e93cbfeec372f752b3951e09d5',
-
-	/**
-	 * ---------------------------------------------------------
 	 * Timezone
 	 * ---------------------------------------------------------
 	 *
@@ -81,34 +70,6 @@ return
 	 */
 
 	'language_cache' => false,
-
-	/**
-	 * ---------------------------------------------------------
-	 * Trusted proxies
-	 * ---------------------------------------------------------
-	 *
-	 * If your application isn't behind a proxy you trust then you can (and should) leave this empty.
-	 * If it is behind a proxy then you can help it return the correct client IP (using the X-Forwarded-For header)
-	 * by listing your proxy IP address(es) here.
-	 */
-
-	'trusted_proxies' =>
-	[
-
-	],
-
-	/**
-	 * ---------------------------------------------------------
-	 * Class aliases
-	 * ---------------------------------------------------------
-	 *
-	 * The key is the alias and the value is the actual class.
-	 */
-
-	'class_aliases' =>
-	[
-
-	],
 
 	/**
 	 * ---------------------------------------------------------
@@ -202,6 +163,43 @@ return
 
 	/**
 	 * ---------------------------------------------------------
+	 * Secret
+	 * ---------------------------------------------------------
+	 *
+	 * The secret is used to provide cryptographic signing, and should be set to a unique, unpredictable value.
+	 * You should NOT use the secret included with the framework in a production environment!
+	 */
+
+	'secret' => 'c3152c7c3f770de6b2624a987a24e863',
+
+	/**
+	 * ---------------------------------------------------------
+	 * Trusted proxies
+	 * ---------------------------------------------------------
+	 *
+	 * If your application isn't behind a proxy you trust then you can (and should) leave this empty.
+	 * If it is behind a proxy then you can help the framework return the correct client IP (using the X-Forwarded-For header)
+	 * by listing your proxy IP address(es) here.
+	 */
+
+	'trusted_proxies' =>
+	[
+
+	],
+
+	/**
+	 * ---------------------------------------------------------
+	 * Class whitelist.
+	 * ---------------------------------------------------------
+	 *
+	 * Array of classes that you'll allow the framework to deserialize.
+	 * Set to FALSE for none and TRUE for all.
+	 */
+
+	'class_whitelist' => false,
+
+	/**
+	 * ---------------------------------------------------------
 	 * Error handling
 	 * ---------------------------------------------------------
 	 *
@@ -213,5 +211,18 @@ return
 	[
 		'log_errors'     => true,
 		'display_errors' => true, // It is recommended to set this value to false when you are in production.
+	],
+
+	/**
+	 * ---------------------------------------------------------
+	 * Class aliases
+	 * ---------------------------------------------------------
+	 *
+	 * The key is the alias and the value is the actual class.
+	 */
+
+	'class_aliases' =>
+	[
+
 	],
 ];
