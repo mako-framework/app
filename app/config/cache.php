@@ -19,7 +19,7 @@ return
 	 *
 	 * You can define as many cache configurations as you want.
 	 *
-	 * The supported cache types are: "apc", "apcu", "database", "file", "memcache", "memcached", "memory", "redis", "void", wincache", "xcache", "zenddisk" and "zendmemory".
+	 * The supported cache types are: "apcu", "database", "file", "memcache", "memcached", "memory", "redis", "void", wincache", "zenddisk" and "zendmemory".
 	 *
 	 * type         : Cache type you want to use.
 	 * prefix       : Cache prefix that should be unique to your application to avoid conflicts.
@@ -29,18 +29,10 @@ return
 	 * servers      : Cache servers (you can use multiple servers and it is only required when using "memcache" or "memcached" cache).
 	 * configuration: Configuration to use for caching (only required when using "database" or "redis" cache).
 	 * table        : Name of the database table (only required when using "database" cache).
-	 * username     : Cache username (only required when using "xcache" cache).
-	 * password     : Cache password (only required when using "xcache" cache).
 	 */
 
 	'configurations' =>
 	[
-		'apc' =>
-		[
-			'type'   => 'apc',
-			'prefix' => 'mako',
-		],
-
 		'apcu' =>
 		[
 			'type'   => 'apcu',
@@ -118,14 +110,6 @@ return
 		[
 			'type'       => 'wincache',
 			'prefix'     => 'mako',
-		],
-
-		'xcache' =>
-		[
-			'type'       => 'xcache',
-			'prefix'     => 'mako',
-			'username'   => 'xcache',
-			'password'   => 'xcache',
 		],
 
 		'zenddisk' =>
