@@ -19,7 +19,7 @@ return
 	 *
 	 * You can define as many cache configurations as you want.
 	 *
-	 * The supported cache types are: "apcu", "database", "file", "memcache", "memcached", "memory", "redis", "void", wincache", "zenddisk" and "zendmemory".
+	 * The supported cache types are: "apcu", "database", "file", "memcache", "memcached", "memory", "null", "redis", wincache", "zenddisk" and "zendmemory".
 	 *
 	 * type         : Cache type you want to use.
 	 * prefix       : Cache prefix that should be unique to your application to avoid conflicts.
@@ -94,16 +94,16 @@ return
 			'type' => 'memory',
 		],
 
+		'null' =>
+		[
+			'type' => 'null',
+		],
+
 		'redis' =>
 		[
 			'type'          => 'redis',
 			'prefix'        => 'mako',
 			'configuration' => 'cache',
-		],
-
-		'void' =>
-		[
-			'type' => 'void',
 		],
 
 		'wincache' =>
