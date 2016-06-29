@@ -21,10 +21,7 @@
 	},
 	"require": {
 		"php": ">=5.5.0",
-		"mako/framework": "4.5.*"
-	},
-	"config": {
-	    "preferred-install": "dist"
+		"mako/framework": "5.0.*"
 	},
 	"minimum-stability": "dev",
 	"prefer-stable": true,
@@ -34,6 +31,6 @@
 		}
 	},
 	"suggest": {
-		"mako/toolbar": "Makes it easier to debug your application while its under development"
+		"mako/toolbar": "Makes it easier to debug your application while it's under development"
 	}
 }
