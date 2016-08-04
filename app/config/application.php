@@ -170,7 +170,7 @@ return
 	 * You should NOT use the secret included with the framework in a production environment!
 	 */
 
-	'secret' => 'c3152c7c3f770de6b2624a987a24e863',
+	'secret' => 'hex:059aa981b679ece04e8593e3c2fcf5a7a115bb69c9c0d504088e484ad121c64d',
 
 	/**
 	 * ---------------------------------------------------------
