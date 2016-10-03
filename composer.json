@@ -21,13 +21,13 @@
 	},
 	"require": {
 		"php": ">=5.5.0",
-		"mako/framework": "5.0.*"
+		"mako/framework": "5.1.*"
 	},
 	"minimum-stability": "dev",
 	"prefer-stable": true,
 	"extra": {
 		"branch-alias": {
-			 "dev-master": "5.0-dev"
+			 "dev-master": "5.1-dev"
 		}
 	},
 	"suggest": {
