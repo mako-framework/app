@@ -14,4 +14,3 @@ return
 	'in_minute'   => '在一分钟',
 	'in_minutes'  => '在%u分钟',
 ];
-

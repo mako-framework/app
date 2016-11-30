@@ -14,4 +14,3 @@ return
 	'in_minute'   => 'в минуту',
 	'in_minutes'  => 'в %1$u <pluralize:%1$u>минута</pluralize>',
 ];
-
