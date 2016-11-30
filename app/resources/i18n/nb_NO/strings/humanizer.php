@@ -14,4 +14,3 @@ return
 	'in_minute'   => 'om et minutt',
 	'in_minutes'  => 'om %u minutter',
 ];
-

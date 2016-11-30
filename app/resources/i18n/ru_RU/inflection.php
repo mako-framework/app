@@ -82,4 +82,3 @@ return
 		return $word;
 	},
 ];
-

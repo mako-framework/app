@@ -14,4 +14,3 @@ return
 	'in_minute'   => 'dans une minute',
 	'in_minutes'  => 'dans %u minutes',
 ];
-
