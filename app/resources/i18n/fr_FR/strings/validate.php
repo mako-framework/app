@@ -9,7 +9,6 @@ return
 	/**
 	 * Rule error messages.
 	 */
-
 	'required'                 => 'Le champ %1$s est obligatoire.',
 	'min_length'               => 'La valeur du champ %1$s doit avoir une longueur d’au moins %2$ caractères.',
 	'max_length'               => 'La valeur du champ %1$s doit être plus courte que %2$s caractères.',
@@ -50,7 +49,6 @@ return
 	/**
 	 * Custom overrides.
 	 */
-
 	'overrides' =>
 	[
 		'fieldnames' =>

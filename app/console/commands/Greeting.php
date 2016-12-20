@@ -22,7 +22,7 @@ class Greeting extends Command
 	/**
 	 * Prints a greeting.
 	 *
-	 * @access  public
+	 * @access public
 	 */
 	public function execute()
 	{

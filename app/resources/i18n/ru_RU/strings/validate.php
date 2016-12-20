@@ -9,7 +9,6 @@ return
 	/**
 	 * Rule error messages.
 	 */
-
 	'required'                 => 'Поле %1$ обязательно для заполнения.',
 	'min_length'               => 'Поле %1$s должно содержать не более %2$s <pluralize:%2$s>символа</pluralize>.',
 	'max_length'               => 'Поле %1$s должно содержать не менее %2$s <pluralize:%2$s>символа</pluralize>.',
@@ -50,7 +49,6 @@ return
 	/**
 	 * Custom overrides.
 	 */
-
 	'overrides' =>
 	[
 		'fieldnames' =>

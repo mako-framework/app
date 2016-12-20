@@ -9,7 +9,6 @@ return
 	 *
 	 * Default configuration to use.
 	 */
-
 	'default' => 'file',
 
 	/**
@@ -30,7 +29,6 @@ return
 	 * configuration: Configuration to use for caching (only required when using "database" or "redis" cache).
 	 * table        : Name of the database table (only required when using "database" cache).
 	 */
-
 	'configurations' =>
 	[
 		'apcu' =>

@@ -9,7 +9,6 @@ return
 	 *
 	 * Default configuration to use.
 	 */
-
 	'default' => 'localhost',
 
 	/**
@@ -25,7 +24,6 @@ return
 	 * password  : (optional) Password of the Redis server.
 	 * database  : (optional) Database index to use for the connection.
 	 */
-
 	'configurations' =>
 	[
 		'localhost' =>

@@ -9,7 +9,6 @@ return
 	/**
 	 * Rule error messages.
 	 */
-
 	'required'                 => '%1$s必填',
 	'min_length'               => '%1$s至少有%2$s个字符长度',
 	'max_length'               => '%1$s必须小于%2$s个字符长度',
@@ -50,7 +49,6 @@ return
 	/**
 	 * Custom overrides.
 	 */
-
 	'overrides' =>
 	[
 		'fieldnames' =>

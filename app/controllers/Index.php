@@ -13,12 +13,12 @@ class Index extends Controller
 	/**
 	 * Welcome route.
 	 *
-	 * @access  public
-	 * @param   \mako\view\ViewFactory  $view  View factory
-	 * @return  string
+	 * @access public
+	 * @param  \mako\view\ViewFactory $view View factory
+	 * @return string
 	 */
-	public function welcome(ViewFactory $view)
+	public function welcome(ViewFactory $view): string
 	{
-		return $view->create('welcome');
+		return $view->render('welcome');
 	}
 }

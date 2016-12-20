@@ -9,7 +9,6 @@ return
 	 *
 	 * Default configuration to use.
 	 */
-
 	'default' => 'openssl',
 
 	/**
@@ -25,7 +24,6 @@ return
 	 * cipher : The cipher method to use for encryption.
 	 * key    : Key used to encrypt/decrypt data. You should NOT use the key included with the framework in a production environment!
 	 */
-
 	'configurations' =>
 	[
 		'openssl' =>

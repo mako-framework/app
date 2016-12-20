@@ -9,7 +9,6 @@ return
 	 *
 	 * Default configuration to use.
 	 */
-
 	'default' => 'test',
 
 	/**
@@ -27,7 +26,6 @@ return
 	 * reconnect  : (optional) Should the connection automatically be reestablished?
 	 * queries    : (optional) Queries that will be executed right after a connection has been made
 	 */
-
 	'configurations' =>
 	[
 		'test' =>

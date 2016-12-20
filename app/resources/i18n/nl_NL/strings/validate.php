@@ -9,7 +9,6 @@ return
 	/**
 	 * Rule error messages.
 	 */
-
 	'required'                 => 'Het %1$s veld is verplicht.',
 	'min_length'               => 'De minimale lengte van het %1$s veld is %2$s karakters.',
 	'max_length'               => 'De maximale lengte van het %1$s veld is %2$s karakters.',
@@ -50,7 +49,6 @@ return
 	/**
 	 * Custom overrides.
 	 */
-
 	'overrides' =>
 	[
 		'fieldnames' =>
