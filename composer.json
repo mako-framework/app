@@ -1,7 +1,10 @@
 {
 	"name": "mako/app",
 	"description": "Mako Framework",
-	"keywords": ["mako", "framework"],
+	"keywords": [
+		"mako",
+		"framework"
+	],
 	"homepage": "http://makoframework.com",
 	"license": "BSD-3-Clause",
 	"authors": [
@@ -32,5 +35,10 @@
 	},
 	"suggest": {
 		"mako/toolbar": "Makes it easier to debug your application while it's under development"
+	},
+	"scripts": {
+		"post-create-project-cmd": [
+			"php app/reactor app.generate_secret"
+		]
 	}
 }
