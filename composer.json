@@ -34,6 +34,7 @@
 		}
 	},
 	"suggest": {
+		"mako/repl": "An interactive shell",
 		"mako/toolbar": "Makes it easier to debug your application while it's under development"
 	},
 	"scripts": {
