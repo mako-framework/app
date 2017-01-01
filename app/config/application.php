@@ -4,6 +4,19 @@ return
 [
 	/**
 	 * ---------------------------------------------------------
+	 * Base URL.
+	 * ---------------------------------------------------------
+	 *
+	 * Base URL of your application.
+	 *
+	 * It will be auto-detected in a web environment if left empty
+	 * but should be configured if you plan to build URLs in the
+	 * command line.
+	 */
+	'base_url' => '',
+
+	/**
+	 * ---------------------------------------------------------
 	 * Clean URLs
 	 * ---------------------------------------------------------
 	 *
@@ -121,7 +134,7 @@ return
 			'mako\application\services\cli\InputService',
 			'mako\application\services\cli\OutputService',
 			'mako\application\services\cli\ErrorHandlerService',
-		]
+		],
 	],
 
 	/**
@@ -149,7 +162,7 @@ return
 		'cli' =>
 		[
 
-		]
+		],
 	],
 
 	/**

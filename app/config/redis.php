@@ -52,5 +52,5 @@ return
 			'password'   => '',
 			'database'   => 2,
 		],
-	]
+	],
 ];

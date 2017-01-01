@@ -16,7 +16,7 @@ class Greeting extends Command
 	 */
 	protected $commandInformation =
 	[
-		'description' => 'Greets the user.'
+		'description' => 'Greets the user.',
 	];
 
 	/**

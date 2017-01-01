@@ -20,7 +20,7 @@ return
             '/^(.*)(a|e|o|u)l$/i' => '$1$2is',
             '/^(.*)il$/i'         => '$1is',
             '/^(.*)(m|n)$/i'      => '$1ns',
-            '/^(.*)$/i'           => '$1s'
+            '/^(.*)$/i'           => '$1s',
         ],
 
         // Irregular words
@@ -38,7 +38,7 @@ return
             'pão'     => 'pães',
             'cidadão' => 'pães',
             'abdomen' => 'abdomens',
-            'as'      => 'ases'
+            'as'      => 'ases',
         ],
     ],
 

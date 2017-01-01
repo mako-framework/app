@@ -55,7 +55,7 @@ return
 		/**
 		 * Number of seconds for which the account gets locked after reaching the maximum number of login attempts.
 		 */
-		'lock_time' => 60 * 5
+		'lock_time' => 60 * 5,
 	],
 
 	/**
