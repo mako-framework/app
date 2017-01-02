@@ -34,8 +34,8 @@
 		}
 	},
 	"suggest": {
-		"mako/repl": "An interactive shell",
-		"mako/toolbar": "Makes it easier to debug your application while it's under development"
+		"mako/repl": "A runtime developer console, interactive debugger and REPL for the Mako framework",
+		"mako/toolbar": "A debug toolbar for the Mako framework"
 	},
 	"scripts": {
 		"post-create-project-cmd": [
