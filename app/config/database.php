@@ -24,6 +24,7 @@ return
 	 * persistent : (optional) Set to true to make the connection persistent
 	 * log_queries: (optional) Enable query logging?
 	 * reconnect  : (optional) Should the connection automatically be reestablished?
+	 * options    : (optional) An array of PDO options
 	 * queries    : (optional) Queries that will be executed right after a connection has been made
 	 */
 	'configurations' =>
