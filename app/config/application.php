@@ -131,8 +131,6 @@ return
 		],
 		'cli' =>
 		[
-			'mako\application\services\cli\InputService',
-			'mako\application\services\cli\OutputService',
 			'mako\application\services\cli\ErrorHandlerService',
 		],
 	],
