@@ -21,8 +21,6 @@ class Greeting extends Command
 
 	/**
 	 * Prints a greeting.
-	 *
-	 * @access public
 	 */
 	public function execute()
 	{

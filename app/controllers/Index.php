@@ -13,7 +13,6 @@ class Index extends Controller
 	/**
 	 * Welcome route.
 	 *
-	 * @access public
 	 * @param  \mako\view\ViewFactory $view View factory
 	 * @return string
 	 */
