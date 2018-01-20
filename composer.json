@@ -36,7 +36,7 @@
 	"suggest": {
 		"mako/repl": "A runtime developer console, interactive debugger and REPL for the Mako framework",
 		"mako/toolbar": "A debug toolbar for the Mako framework",
-		"mako/helpers": "A collection of helper functions",
+		"mako/helpers": "A collection of helper functions"
 	},
 	"scripts": {
 		"post-create-project-cmd": [
