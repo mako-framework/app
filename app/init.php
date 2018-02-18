@@ -34,8 +34,6 @@ set_error_handler(function($code, $message, $file, $line)
 /**
  * Define some constants.
  */
-define('MAKO_START', microtime(true));
-
 define('MAKO_APPLICATION_PATH', __DIR__);
 
 /**
