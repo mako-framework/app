@@ -46,6 +46,7 @@ return
 	'unique'                   => '%1$s må være unik.',
 	'exists'                   => '%1$s finnes ikke.',
 	'mimetype'                 => '%1$s må være en fil av type: %2$s.',
+	'max_filesize'             => '%1$s må være mindre enn %2$s.',
 
 	/**
 	 * Custom overrides.
