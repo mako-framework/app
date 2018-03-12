@@ -45,6 +45,7 @@ return
 	'uuid'                     => 'UUID invalide.',
 	'unique'                   => 'La valeur du champ %1$s doit être unique.',
 	'exists'                   => 'La valeur du champ %1$s n’existe pas.',
+	'mimetype'                 => '%1$s doit etre un fichier de type: %2$s.',
 
 	/**
 	 * Custom overrides.

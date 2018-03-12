@@ -45,6 +45,7 @@ return
 	'uuid'                     => 'Invalid UUID.',
 	'unique'                   => 'The %1$s must be unique.',
 	'exists'                   => 'The %1$s doesn\'t exist.',
+	'mimetype'                 => 'The %1$s must be a file of type: %2$s.',
 
 	/**
 	 * Custom overrides.
