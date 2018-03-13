@@ -47,6 +47,7 @@ return
 	'exists'                   => 'La valeur du champ %1$s n’existe pas.',
 	'mimetype'                 => '%1$s doit être un fichier de type: %2$s.',
 	'max_filesize'             => '%1$s doit être un fichier plus petit que %2$s.',
+	'is_uploaded'              => '%1$s doit être un fichier téléchargé.',
 
 	/**
 	 * Custom overrides.

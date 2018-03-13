@@ -47,6 +47,7 @@ return
 	'exists'                   => 'The %1$s doesn\'t exist.',
 	'mimetype'                 => 'The %1$s must be a file of type: %2$s.',
 	'max_filesize'             => 'The %1$s must be less than %2$s in size.',
+	'is_uploaded'              => 'The %1$s must be an uploaded file.',
 
 	/**
 	 * Custom overrides.
