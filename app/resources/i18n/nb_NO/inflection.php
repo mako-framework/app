@@ -14,9 +14,9 @@ return
 
 		'plural' =>
 		[
-			'/er$/i' => "ere",
-			'/e$/i'  => "er",
-			'/$/'    => "er",
+			'/er$/i' => 'ere',
+			'/e$/i'  => 'er',
+			'/$/'    => 'er',
 		],
 
 		// Irregular words

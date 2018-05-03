@@ -6,7 +6,7 @@
 
 return
 [
-	/**
+	/*
 	 * Rule error messages.
 	 */
 	'required'                 => 'Het %1$s veld is verplicht.',
@@ -46,7 +46,7 @@ return
 	'unique'                   => '%1$s moet uniek zijn.',
 	'exists'                   => '%1$s bestaat niet.',
 
-	/**
+	/*
 	 * Custom overrides.
 	 */
 	'overrides' =>

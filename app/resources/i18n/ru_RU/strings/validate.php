@@ -6,7 +6,7 @@
 
 return
 [
-	/**
+	/*
 	 * Rule error messages.
 	 */
 	'required'                 => 'Поле %1$ обязательно для заполнения.',
@@ -46,7 +46,7 @@ return
 	'unique'                   => '%1$s уже существует.',
 	'exists'                   => '%1$s не существует.',
 
-	/**
+	/*
 	 * Custom overrides.
 	 */
 	'overrides' =>

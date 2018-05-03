@@ -6,7 +6,7 @@
 
 return
 [
-	/**
+	/*
 	 * Rule error messages.
 	 */
 	'required'                 => 'Le champ %1$s est obligatoire.',
@@ -49,7 +49,7 @@ return
 	'max_filesize'             => '%1$s doit être un fichier plus petit que %2$s.',
 	'is_uploaded'              => '%1$s doit être un fichier téléchargé.',
 
-	/**
+	/*
 	 * Custom overrides.
 	 */
 	'overrides' =>

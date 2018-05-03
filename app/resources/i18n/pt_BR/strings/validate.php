@@ -6,7 +6,7 @@
 
 return
 [
-	/**
+	/*
 	 * Rule error messages.
 	 */
 	'required'                 => 'O campo %1$s é obrigatório.',
@@ -46,7 +46,7 @@ return
 	'unique'                   => 'O conteúdo do campo %1$s já existe.',
 	'exists'                   => 'O conteúdo do campo %1$s não existe.',
 
-	/**
+	/*
 	 * Custom overrides.
 	 */
 	'overrides' =>

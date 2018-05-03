@@ -6,7 +6,7 @@
 
 return
 [
-	/**
+	/*
 	 * Rule error messages.
 	 */
 	'required'                 => '%1$s必填',
@@ -46,7 +46,7 @@ return
 	'unique'                   => '%1$s必须是唯一的',
 	'exists'                   => '%1$s并不存在',
 
-	/**
+	/*
 	 * Custom overrides.
 	 */
 	'overrides' =>

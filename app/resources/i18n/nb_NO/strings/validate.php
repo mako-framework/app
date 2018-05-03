@@ -6,7 +6,7 @@
 
 return
 [
-	/**
+	/*
 	 * Rule error messages.
 	 */
 	'required'                 => '%1$sfeltet er obligatorisk.',
@@ -49,7 +49,7 @@ return
 	'max_filesize'             => '%1$s må være mindre enn %2$s.',
 	'is_uploaded'              => '%1$s må være en opplastet fil.',
 
-	/**
+	/*
 	 * Custom overrides.
 	 */
 	'overrides' =>
