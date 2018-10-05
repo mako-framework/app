@@ -21,6 +21,7 @@ return
 	 * host      : IP address or hostname of the Redis server.
 	 * port      : Port of the Redis server.
 	 * persistent: (optional) Set to true to make the connection persistent.
+	 * timeout   : (optional) Timeout in seconds for connection and read/write operations.
 	 * password  : (optional) Password of the Redis server.
 	 * database  : (optional) Database index to use for the connection.
 	 */
@@ -31,6 +32,7 @@ return
 			'host'       => 'localhost',
 			'port'       => 6379,
 			'persistent' => false,
+			'timeout'    => 60,
 			'password'   => '',
 			'database'   => 0,
 		],
@@ -40,6 +42,7 @@ return
 			'host'       => 'localhost',
 			'port'       => 6379,
 			'persistent' => false,
+			'timeout'    => 60,
 			'password'   => '',
 			'database'   => 1,
 		],
@@ -49,6 +52,7 @@ return
 			'host'       => 'localhost',
 			'port'       => 6379,
 			'persistent' => false,
+			'timeout'    => 60,
 			'password'   => '',
 			'database'   => 2,
 		],
