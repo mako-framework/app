@@ -16,6 +16,7 @@ return
 	'alpha'                    => 'The %1$s field must contain only letters.',
 	'alphanumeric_unicode'     => 'The %1$s field must contain only letters and numbers.',
 	'alphanumeric'             => 'The %1$s field must contain only letters and numbers.',
+	'array'                    => 'The %1$s field must contain an array.',
 	'before'                   => 'The %1$s field must contain a valid date before %3$s.',
 	'between'                  => 'The value of the %1$s field must be between %2$s and %3$s.',
 	'date'                     => 'The %1$s field must contain a valid date.',

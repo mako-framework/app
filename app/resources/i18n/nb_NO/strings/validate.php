@@ -16,6 +16,7 @@ return
 	'alpha'                    => '%1$s kan bare inneholde bokstaver.',
 	'alphanumeric_unicode'     => '%1$s kan bare inneholde bokstaver og tall.',
 	'alphanumeric'             => '%1$s kan bare inneholde bokstaver og tall.',
+	'array'                    => '%1$s må være et array.',
 	'before'                   => '%1$s må være en gyldig dato før %3$s.',
 	'between'                  => '%1$s må være mellom %2$s og %3$s.',
 	'date'                     => '%1$s må være en gyldig dato.',

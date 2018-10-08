@@ -9,14 +9,15 @@ return
 	/*
 	 * Rule error messages.
 	 */
-	'after'                    => 'Le champ %1$s doit être une date valable après le %3$s.',
+	'after'                    => 'La valeur du champ %1$s doit être une date valable après le %3$s.',
 	'alpha_dash_unicode'       => 'Le champ %1$s ne peut contenir que des lettres, chiffres et traits d’union.',
 	'alpha_dash'               => 'Le champ %1$s ne peut contenir que des lettres, chiffres et traits d’union.',
 	'alpha_unicode'            => 'Le champ %1$s ne peut contenir que des lettres.',
 	'alpha'                    => 'Le champ %1$s ne peut contenir que des lettres.',
 	'alphanumeric_unicode'     => 'Le champ %1$s ne peut contenir que des lettres et des chiffres.',
 	'alphanumeric'             => 'Le champ %1$s ne peut contenir que des lettres et des chiffres.',
-	'before'                   => 'Le champ %1$s doit être une date valable avant le %3$s.',
+	'array'                    => 'Le champ %1$s doit être un array.',
+	'before'                   => 'La valeur du champ %1$s doit être une date valable avant le %3$s.',
 	'between'                  => 'La valeur du champ %1$s doit être entre %2$s et %3$s.',
 	'date'                     => 'Le champ %1$s doit contenir une date valable.',
 	'different'                => 'Les valeurs des champs %1$s et %2$s doivent être différentes.',
