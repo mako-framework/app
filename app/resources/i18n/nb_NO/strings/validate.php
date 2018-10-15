@@ -31,7 +31,7 @@ return
 	'hex'                      => '%1$s må være en gyldig heksadesimalverdi.',
 	'in'                       => '%1$s må være et av de tilgjengelige alternativene.',
 	'integer'                  => '%1$s må være et heltall.',
-	'ip'                       => '%1$s må være en gyldig IP-adresse.',
+	'ip'                       => '%1$s må være en gyldig %2$s-adresse.',
 	'is_uploaded'              => '%1$s må være en opplastet fil.',
 	'json'                     => '%1$s må være gyldig JSON.',
 	'less_than_or_equal_to'    => '%1$s må være mindre enn eller lik %2$s.',

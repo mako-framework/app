@@ -31,7 +31,7 @@ return
 	'hex'                      => 'Le champ %1$s doit contenir un hexadécimale valable.',
 	'in'                       => 'Le champ %1$s doit contenir une des alternatives disponibles.',
 	'integer'                  => 'Le champ %1$s doit contenir un chiffre entier.',
-	'ip'                       => 'Le champ %1$s doit contenir une adresse IP valable.',
+	'ip'                       => 'Le champ %1$s doit contenir une adresse %2$s valable.',
 	'is_uploaded'              => '%1$s doit être un fichier téléchargé.',
 	'json'                     => 'Le champ %1$s doit contenir du JSON valable.',
 	'less_than_or_equal_to'    => 'La valeur du champ %1$s doit être inférieure ou égale à %2$s.',

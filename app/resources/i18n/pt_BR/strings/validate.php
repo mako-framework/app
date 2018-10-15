@@ -30,7 +30,7 @@ return
 	'hex'                      => 'O campo %1$s deve conter um valor hexadecimal válido.',
 	'in'                       => 'O campo %1$s deve conter umas das opções disponíveis.',
 	'integer'                  => 'O campo %1$s deve conter um valor inteiro.',
-	'ip'                       => 'O campo %1$s deve conter um endereço de IP válido.',
+	'ip'                       => 'O campo %1$s deve conter um endereço de %2$s válido.',
 	'less_than_or_equal_to'    => 'O valor do campo %1$s deve ser menor ou igual a %2$s.',
 	'less_than'                => 'O valor do campo %1$s deve ser menor que %2$s.',
 	'match'                    => 'Os valores dos campos %1$s e %2$s devem ser iguais.',

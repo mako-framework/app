@@ -31,7 +31,7 @@ return
 	'hex'                      => 'The %1$s field must contain a valid hexadecimal value.',
 	'in'                       => 'The %1$s field must contain one of available options.',
 	'integer'                  => 'The %1$s field must contain an integer.',
-	'ip'                       => 'The %1$s field must contain a valid IP address.',
+	'ip'                       => 'The %1$s field must contain a valid %2$s address.',
 	'is_uploaded'              => 'The %1$s must be an uploaded file.',
 	'json'                     => 'The %1$s field must contain valid JSON.',
 	'less_than_or_equal_to'    => 'The value of the %1$s field must be less than or equal to %2$s.',

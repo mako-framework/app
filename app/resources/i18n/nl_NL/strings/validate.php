@@ -30,7 +30,7 @@ return
 	'hex'                      => 'Het %1$s veld moet een geldig hexadecimale waarde bevatten.',
 	'in'                       => 'Het %1$s veld moet een van de mogelijke opties bevatten.',
 	'integer'                  => 'Het %1$s veld moet een integer bevatten.',
-	'ip'                       => 'Het %1$s veld moet een geldige IP adres bevatten.',
+	'ip'                       => 'Het %1$s veld moet een geldige %2$s adres bevatten.',
 	'less_than_or_equal_to'    => 'De waarde van het %1$s veld moet minder dan of gelijk aan %2$s zijn.',
 	'less_than'                => 'De waarde van het %1$s veld moet minder dan %2$s zijn.',
 	'match'                    => 'De waardes van het %1$s veld en het %2$s veld moeten gelijk zijn.',
