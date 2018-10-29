@@ -207,8 +207,9 @@ return
 	 */
 	'error_handler' =>
 	[
-		'log_errors'     => true,
-		'display_errors' => true, // It is recommended to set this value to false when you are in production.
+		'log_errors'          => true,
+		'display_errors'      => true, // It is recommended to set this value to false when you are in production.
+		'hide_session_cookie' => true, // Prevents the session cookie from being displayed in the error output.
 	],
 
 	/*
