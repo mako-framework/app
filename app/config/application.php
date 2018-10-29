@@ -202,14 +202,15 @@ return
 	 * Error handling
 	 * ---------------------------------------------------------
 	 *
-	 * log_errors    : Set to true if you want to log errors caught by the Mako errors handler.
-	 * display_errors: Set to true to display errors caught by the mako error handlers.
+	 * log_errors     : Set to true if you want to log errors caught by the Mako errors handler.
+	 * display_errors : Set to true to display errors caught by the mako error handlers.
+	 * debug_blacklist: Specify a list of superglobal values you want to hide from the debug output.
 	 */
 	'error_handler' =>
 	[
-		'log_errors'          => true,
-		'display_errors'      => true, // It is recommended to set this value to false when you are in production.
-		'hide_session_cookie' => true, // Prevents the session cookie from being displayed in the error output.
+		'log_errors'      => true,
+		'display_errors'  => true, // It is recommended to set this value to false when you are in production.
+		'debug_blacklist' => [], // E.g. ['_COOKIE' => ['mako_session']]
 	],
 
 	/*
