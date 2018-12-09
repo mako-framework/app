@@ -22,7 +22,7 @@ class Greeting extends Command
 	/**
 	 * Prints a greeting.
 	 */
-	public function execute()
+	public function execute(): void
 	{
 		$this->write('<blue>Hello, world!</blue>');
 	}
