@@ -9,11 +9,11 @@ return
 	 *
 	 * Base URL of your application.
 	 *
-	 * It will be auto-detected in a web environment if left empty
+	 * It will be auto-detected in a web environment if set to null
 	 * but should be configured if you plan to build URLs in the
 	 * command line.
 	 */
-	'base_url' => '',
+	'base_url' => null,
 
 	/*
 	 * ---------------------------------------------------------
