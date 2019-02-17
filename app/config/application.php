@@ -62,7 +62,6 @@ return
 	'languages' =>
 	[
 		//'no' => ['strings' => 'nb_NO', 'locale' => [LC_ALL => ['nb_NO.UTF-8', 'nb_NO.utf8', 'C'], LC_NUMERIC => 'C']],
-		//'fr' => ['strings' => 'fr_FR', 'locale' => [LC_ALL => ['fr_FR.UTF-8', 'fr_FR.utf8', 'C'], LC_NUMERIC => 'C']],
 	],
 
 	/*
