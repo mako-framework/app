@@ -213,7 +213,7 @@ return
 	 * log_errors         : Set to true if you want to log errors caught by the Mako errors handler.
 	 * display_errors     : Set to true to display detailed information about errors caught by the mako error handlers.
 	 * debug_blacklist    : Specify a list of superglobal values you want to hide from the debug output.
-	 * disable_logging_for: Array of exception class names.
+	 * disable_logging_for: Array of exception types to ignore when logging.
 	 */
 	'error_handler' =>
 	[
