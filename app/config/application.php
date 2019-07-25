@@ -88,7 +88,7 @@ return
 	 */
 	'commands' =>
 	[
-		'greeting' => 'app\console\commands\Greeting',
+		'greeting' => app\console\commands\Greeting::class,
 	],
 
 	/*
@@ -107,30 +107,30 @@ return
 	[
 		'core' =>
 		[
-			'mako\application\services\SignerService',
-			'mako\application\services\HTTPService',
-			'mako\application\services\LoggerService',
-			'mako\application\services\ViewFactoryService',
-			//'mako\application\services\SessionService',
-			//'mako\application\services\DatabaseService',
-			//'mako\application\services\RedisService',
-			//'mako\application\services\I18nService',
-			//'mako\application\services\HumanizerService',
-			//'mako\application\services\CacheService',
-			//'mako\application\services\CryptoService',
-			//'mako\application\services\ValidatorFactoryService',
-			//'mako\application\services\PaginationFactoryService',
-			//'mako\application\services\GatekeeperService',
-			//'mako\application\services\EventService',
-			//'mako\application\services\CommandBusService',
+			mako\application\services\SignerService::class,
+			mako\application\services\HTTPService::class,
+			mako\application\services\LoggerService::class,
+			mako\application\services\ViewFactoryService::class,
+			//mako\application\services\SessionService::class,
+			//mako\application\services\DatabaseService::class,
+			//mako\application\services\RedisService::class,
+			//mako\application\services\I18nService::class,
+			//mako\application\services\HumanizerService::class,
+			//mako\application\services\CacheService::class,
+			//mako\application\services\CryptoService::class,
+			//mako\application\services\ValidatorFactoryService::class,
+			//mako\application\services\PaginationFactoryService::class,
+			//mako\application\services\GatekeeperService::class,
+			//mako\application\services\EventService::class,
+			//mako\application\services\CommandBusService::class,
 		],
 		'web' =>
 		[
-			'mako\application\services\web\ErrorHandlerService',
+			mako\application\services\web\ErrorHandlerService::class,
 		],
 		'cli' =>
 		[
-			'mako\application\services\cli\ErrorHandlerService',
+			mako\application\services\cli\ErrorHandlerService::class,
 		],
 	],
 

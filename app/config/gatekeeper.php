@@ -26,14 +26,14 @@ return
 	 * User model
 	 * ---------------------------------------------------------
 	 */
-	'user_model'  => 'mako\gatekeeper\entities\user\User',
+	'user_model'  => mako\gatekeeper\entities\user\User::class,
 
 	/*
 	 * ---------------------------------------------------------
 	 * Group model
 	 * ---------------------------------------------------------
 	 */
-	'group_model'  => 'mako\gatekeeper\entities\group\Group',
+	'group_model'  => mako\gatekeeper\entities\group\Group::class,
 
 	/*
 	 * ---------------------------------------------------------
