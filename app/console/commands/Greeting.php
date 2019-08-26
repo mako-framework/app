@@ -10,14 +10,9 @@ use mako\reactor\Command;
 class Greeting extends Command
 {
 	/**
-	 * Command information.
-	 *
-	 * @var array
+	 * {@inheritdoc}
 	 */
-	protected $commandInformation =
-	[
-		'description' => 'Greets the user.',
-	];
+	protected $description = 'Greets the user.';
 
 	/**
 	 * Prints a greeting.
