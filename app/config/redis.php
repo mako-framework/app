@@ -18,12 +18,13 @@ return
 	 *
 	 * You can define as many Redis configurations as you want.
 	 *
-	 * host      : IP address or hostname of the Redis server.
-	 * port      : Port of the Redis server.
-	 * persistent: (optional) Set to true to make the connection persistent.
-	 * timeout   : (optional) Timeout in seconds for connection and read/write operations.
-	 * password  : (optional) Password of the Redis server.
-	 * database  : (optional) Database index to use for the connection.
+	 * host              : IP address or hostname of the Redis server.
+	 * port              : Port of the Redis server.
+	 * persistent        : (optional) Set to true to make the connection persistent.
+	 * timeout           : (optional) Read/write operations timeout in seconds.
+	 * connection_timeout: (optional) Connection timeout in seconds.
+	 * password          : (optional) Password of the Redis server.
+	 * database          : (optional) Database index to use for the connection.
 	 */
 	'configurations' =>
 	[
