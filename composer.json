@@ -1,46 +1,46 @@
 {
-	"name": "mako/app",
-	"description": "Mako Framework",
-	"keywords": [
-		"mako",
-		"framework"
-	],
-	"homepage": "http://makoframework.com",
-	"license": "BSD-3-Clause",
-	"authors": [
-		{
-			"name": "Frederic G. Østby",
-			"email": "frederic.g.ostby@gmail.com"
-		},
-		{
-			"name": "Contributors",
-			"homepage": "http://makoframework.com/contributors"
-		}
-	],
-	"autoload": {
-		"psr-4": {
-			"app\\": "app"
-		}
-	},
-	"require": {
-		"php": ">=7.2.0",
-		"mako/framework": "6.3.*"
-	},
-	"minimum-stability": "dev",
-	"prefer-stable": true,
-	"extra": {
-		"branch-alias": {
-			 "dev-master": "6.3-dev"
-		}
-	},
-	"suggest": {
-		"mako/repl": "A runtime developer console, interactive debugger and REPL for the Mako framework",
-		"mako/toolbar": "A debug toolbar for the Mako framework",
-		"mako/helpers": "A collection of helper functions"
-	},
-	"scripts": {
-		"post-create-project-cmd": [
-			"php app/reactor app.generate_secret"
-		]
-	}
+    "name": "mako/app",
+    "description": "Mako Framework",
+    "keywords": [
+        "mako",
+        "framework"
+    ],
+    "homepage": "http://makoframework.com",
+    "license": "BSD-3-Clause",
+    "authors": [
+        {
+            "name": "Frederic G. Østby",
+            "email": "frederic.g.ostby@gmail.com"
+        },
+        {
+            "name": "Contributors",
+            "homepage": "http://makoframework.com/contributors"
+        }
+    ],
+    "autoload": {
+        "psr-4": {
+            "app\\": "app"
+        }
+    },
+    "require": {
+        "php": ">=7.2.0",
+        "mako/framework": "6.3.*"
+    },
+    "minimum-stability": "dev",
+    "prefer-stable": true,
+    "extra": {
+        "branch-alias": {
+             "dev-master": "6.3-dev"
+        }
+    },
+    "suggest": {
+        "mako/repl": "A runtime developer console, interactive debugger and REPL for the Mako framework",
+        "mako/toolbar": "A debug toolbar for the Mako framework",
+        "mako/helpers": "A collection of helper functions"
+    },
+    "scripts": {
+        "post-create-project-cmd": [
+            "php app/reactor app.generate_secret"
+        ]
+    }
 }
