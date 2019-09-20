@@ -49,7 +49,7 @@ return
 	 *
 	 * Default application language and locale.
 	 */
-	'default_language' => ['strings' => 'en_US', 'locale' => [LC_ALL => ['en_US.UTF-8', 'en_US.utf8', 'C'], LC_NUMERIC => 'C']],
+	'default_language' => ['strings' => 'en_US', 'locale' => [LC_ALL => ['en_US.UTF-8', 'en_US.utf8', 'C.UTF-8', 'C'], LC_NUMERIC => 'C']],
 
 	/*
 	 * ---------------------------------------------------------
@@ -61,7 +61,7 @@ return
 	 */
 	'languages' =>
 	[
-		//'no' => ['strings' => 'nb_NO', 'locale' => [LC_ALL => ['nb_NO.UTF-8', 'nb_NO.utf8', 'C'], LC_NUMERIC => 'C']],
+		//'no' => ['strings' => 'nb_NO', 'locale' => [LC_ALL => ['nb_NO.UTF-8', 'nb_NO.utf8', 'C.UTF-8', 'C'], LC_NUMERIC => 'C']],
 	],
 
 	/*
