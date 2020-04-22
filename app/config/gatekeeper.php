@@ -105,5 +105,12 @@ return
 		 * (although it is not supported by all browsers), but that claim is often disputed.
 		 */
 		'httponly' => true,
+
+		/*
+		 * The supported values are 'Lax', 'Strict' and 'None'.
+		 *
+		 * @see https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Set-Cookie/SameSite
+		 */
+		'samesite' => 'Lax',
 	],
 ];
