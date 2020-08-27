@@ -210,11 +210,13 @@ return
 	 * Logger
 	 * ---------------------------------------------------------
 	 *
+	 * channel: Log channel name
 	 * handler: Log handler(s) to use. The avaiable options out of the box are 'ErrorLog', 'Stream' and 'Syslog'.
 	 * syslog : Syslog specific options (https://linux.die.net/man/3/syslog).
 	 */
 	'logger' =>
 	[
+		'channel' => 'mako',
 		'handler' => ['Stream'],
 		'syslog'  =>
 		[
