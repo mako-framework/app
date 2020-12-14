@@ -10,7 +10,7 @@ use mako\reactor\Command;
 class Greeting extends Command
 {
 	/**
-	 * {@inheritdoc}
+	 * {@inheritDoc}
 	 */
 	protected $description = 'Greets the user.';
 
