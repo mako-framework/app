@@ -88,7 +88,7 @@ return
 	 *
 	 * To disable auto-detection just comment out the 'commands_directory' key.
 	 *
-	 * When using the 'commands' array key is the command name and the array value
+	 * When using the 'commands' array the key is the command name and the array value
 	 * is the command class.
 	 */
 	'commands_directory' => MAKO_APPLICATION_PATH . '/console/commands',
