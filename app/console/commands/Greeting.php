@@ -12,6 +12,11 @@ class Greeting extends Command
 	/**
 	 * {@inheritDoc}
 	 */
+	protected $command = 'greeting';
+
+	/**
+	 * {@inheritDoc}
+	 */
 	protected $description = 'Greets the user.';
 
 	/**

@@ -83,13 +83,20 @@ return
 	 * ---------------------------------------------------------
 	 *
 	 * This is where you register your reactor commands.
-	 * The array key is the command name and the array value
+	 * You can either let the framework auto-detect and register the commands
+	 * for you or register them manually using the 'commands' array.
+	 *
+	 * To disable auto-detection just comment out the 'commands_directory' key.
+	 *
+	 * The 'commands' array key is the command name and the array value
 	 * is the command class.
 	 */
-	'commands' =>
+	'commands_directory' => MAKO_APPLICATION_PATH . '/console/commands',
+
+	/*'commands' =>
 	[
 		'greeting' => app\console\commands\Greeting::class,
-	],
+	],*/
 
 	/*
 	 * ---------------------------------------------------------
