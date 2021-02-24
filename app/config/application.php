@@ -66,19 +66,6 @@ return
 
 	/*
 	 * ---------------------------------------------------------
-	 * Language cache
-	 * ---------------------------------------------------------
-	 *
-	 * Enabling language caching can speed up applications with a lot of language files by
-	 * reducing the number of files it has to load on every request.
-	 *
-	 * Use the default cache store by setting the config value to TRUE and choose a specific cache configuration
-	 * by specifying its name (as specified in the cache configuration).
-	 */
-	'language_cache' => false,
-
-	/*
-	 * ---------------------------------------------------------
 	 * Commands
 	 * ---------------------------------------------------------
 	 *
