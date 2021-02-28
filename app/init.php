@@ -25,7 +25,7 @@ set_error_handler(function($code, $message, $file, $line)
 {
 	if((error_reporting() & $code) !== 0)
 	{
-		throw new ErrorException($message, $code, 0, $file, $line);
+		throw new ErrorException($message, $code, $code, $file, $line);
 	}
 
 	return true;
