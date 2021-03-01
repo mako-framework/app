@@ -11,7 +11,7 @@ error_reporting(E_ALL | E_STRICT);
  * printed to the screen as part of the output or if they should be hidden from the user.
  * It is recommended to set this value to false when you are in production.
  */
-ini_set('display_errors', true);
+ini_set('display_errors', false);
 
 /*
  * Override the default path for error logs.
