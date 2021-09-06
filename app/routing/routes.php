@@ -1,10 +1,7 @@
 <?php
 
-use mako\http\routing\Routes;
+use app\controllers\Index;
 
 /** @var \mako\http\routing\Routes $routes */
 
-$routes->group(['namespace' => 'app\controllers'], function(Routes $routes): void
-{
-	$routes->get('/', 'Index::welcome');
-});
+$routes->get('/', [Index::class, 'welcome']);
