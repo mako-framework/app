@@ -221,14 +221,14 @@ return
 	 *
 	 * log_errors     : Set to true if you want to log errors caught by the Mako errors handler.
 	 * display_errors : Set to true to display detailed information about errors caught by the mako error handlers.
-	 * debug_blacklist: Specify a list of superglobal values you want to hide from the debug output.
+	 * keep           : Specify a list of cookies or headers to keep when an exception has been handled.
 	 * dont_log       : Array of exception types to ignore when logging errors.
 	 */
 	'error_handler' =>
 	[
 		'log_errors'      => true,
 		'display_errors'  => true,
-		'debug_blacklist' => [], // E.g. ['_COOKIE' => ['mako_session']]
+		'keep'            => [], // E.g. ['headers' => ['Access-Control-.*']]
 		'dont_log'        =>
 		[
 			mako\http\exceptions\HttpException::class,
