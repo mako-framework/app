@@ -1,7 +1,8 @@
 .DS_Store
 .php_cs.cache
+.php-cs-fixer.cache
 .phpunit.result.cache
-/node_modules
+/.idea
 /vendor
+composer.lock
 composer.phar
-npm-debug.log

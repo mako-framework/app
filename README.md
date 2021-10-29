@@ -6,7 +6,7 @@ Check out the [documentation](http://makoframework.com/docs) and create somethin
 
 ## Requirements
 
-The minimum requirements for Mako is PHP 7.3.0 or higher as well as `ext-mbstring`.
+The minimum requirements for Mako is PHP 7.4.0 or higher as well as `ext-mbstring`.
 
 ## Installation
 
