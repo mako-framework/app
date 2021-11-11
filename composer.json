@@ -40,7 +40,7 @@
     },
     "scripts": {
         "post-create-project-cmd": [
-            "php app/reactor app.generate_secret"
+            "php app/reactor app:generate-secret"
         ]
     }
 }
