@@ -231,7 +231,7 @@ return
 		'keep'            => [], // E.g. ['headers' => ['Access-Control-.*']]
 		'dont_log'        =>
 		[
-			mako\http\exceptions\HttpException::class,
+			mako\http\exceptions\HttpStatusException::class,
 		],
 	],
 ];
