@@ -47,9 +47,9 @@ return
 
 		'file' =>
 		[
-			'type'       => 'file',
-			'prefix'     => 'mako',
-			'path'       => MAKO_APPLICATION_PATH . '/storage/cache',
+			'type'   => 'file',
+			'prefix' => 'mako',
+			'path'   => MAKO_APPLICATION_PATH . '/storage/cache',
 		],
 
 		'memcache' =>
@@ -106,8 +106,8 @@ return
 
 		'wincache' =>
 		[
-			'type'       => 'wincache',
-			'prefix'     => 'mako',
+			'type'   => 'wincache',
+			'prefix' => 'mako',
 		],
 	],
 ];

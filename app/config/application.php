@@ -226,10 +226,10 @@ return
 	 */
 	'error_handler' =>
 	[
-		'log_errors'      => true,
-		'display_errors'  => true,
-		'keep'            => [], // E.g. ['headers' => ['Access-Control-.*']]
-		'dont_log'        =>
+		'log_errors'     => true,
+		'display_errors' => true,
+		'keep'           => [], // E.g. ['headers' => ['Access-Control-.*']]
+		'dont_log'       =>
 		[
 			mako\http\exceptions\HttpStatusException::class,
 		],
