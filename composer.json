@@ -23,14 +23,14 @@
         }
     },
     "require": {
-        "php": ">=7.4.0",
-        "mako/framework": "8.1.*"
+        "php": ">=8.0.0",
+        "mako/framework": "9.0.*"
     },
     "minimum-stability": "dev",
     "prefer-stable": true,
     "extra": {
         "branch-alias": {
-             "dev-master": "8.1-dev"
+             "dev-master": "9.0-dev"
         }
     },
     "suggest": {

@@ -61,7 +61,7 @@ return
 
 	// Pluralization function
 
-	'pluralize' => function ($word, $count, $rules)
+	'pluralize' => static function ($word, $count, $rules)
 	{
 		if($count !== 1)
 		{
