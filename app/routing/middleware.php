@@ -1,11 +1,15 @@
 <?php
 
+use app\routing\middleware\AccessControl;
 use mako\http\routing\middleware\ContentSecurityPolicy;
 use mako\http\routing\middleware\SecurityHeaders;
 use mako\validator\input\http\routing\middleware\InputValidation;
 
 /** @var \mako\http\routing\Dispatcher $dispatcher */
 
-//$dispatcher->registerMiddleware('content_security_policy', ContentSecurityPolicy::class);
-//$dispatcher->registerMiddleware('security_headers', SecurityHeaders::class);
-//$dispatcher->registerMiddleware('input_validation', InputValidation::class);
+//$dispatcher->registerMiddleware(AccessControl::class, priority: 1);
+//$dispatcher->registerMiddleware(ContentSecurityPolicy::class);
+//$dispatcher->registerMiddleware(SecurityHeaders::class);
+//$dispatcher->registerMiddleware(InputValidation::class);
+
+//$dispatcher->setMiddlewareAsGlobal([AccessControl::class]);
