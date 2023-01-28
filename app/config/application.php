@@ -85,7 +85,7 @@ return
 	 * Services
 	 * ---------------------------------------------------------
 	 *
-	 * Services to register in the dependecy injection container.
+	 * Services to register in the dependency injection container.
 	 * They will be registered in the order that they are defined.
 	 *
 	 * core: Services that are required for both the web an the command line interface
@@ -200,7 +200,7 @@ return
 	 * ---------------------------------------------------------
 	 *
 	 * channel: Log channel name
-	 * handler: Log handler(s) to use. The avaiable options out of the box are 'ErrorLog', 'Stream' and 'Syslog'.
+	 * handler: Log handler(s) to use. The available options out of the box are 'ErrorLog', 'Stream' and 'Syslog'.
 	 * syslog : Syslog specific options (https://linux.die.net/man/3/syslog).
 	 */
 	'logger' =>
