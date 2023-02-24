@@ -112,6 +112,7 @@ return
 			//mako\application\services\GatekeeperService::class,
 			//mako\application\services\EventService::class,
 			//mako\application\services\CommandBusService::class,
+			//app\services\BusService::class,
 		],
 		'web' =>
 		[
