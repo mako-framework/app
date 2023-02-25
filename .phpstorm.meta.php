@@ -3,10 +3,13 @@
 namespace PHPSTORM_META {
 
 	use mako\application\Application;
-	use mako\cache\CacheManager;
+    use mako\bus\command\CommandBusInterface;
+    use mako\bus\event\EventBusInterface;
+    use mako\bus\query\QueryBusInterface;
+    use mako\cache\CacheManager;
 	use mako\cli\input\Input;
 	use mako\cli\output\Output;
-	use mako\commander\CommandBusInterface;
+	use mako\commander\CommandBusInterface as LegacyCommandBusInterface;
 	use mako\config\Config;
 	use mako\database\ConnectionManager as DatabaseConnectionManager;
 	use mako\error\ErrorHandler;
@@ -34,13 +37,15 @@ namespace PHPSTORM_META {
 		''             => '@',
 		'app'          => Application::class,
 		'authorizer'   => Authorizer::class,
-		'bus'          => CommandBusInterface::class,
+		'bus'          => LegacyCommandBusInterface::class,
 		'cache'        => CacheManager::class,
+		'commandBus'   => CommandBusInterface::class,
 		'config'       => Config::class,
 		'crypto'       => CryptoManager::class,
 		'database'     => DatabaseConnectionManager::class,
 		'errorHandler' => ErrorHandler::class,
 		'event'        => Event::class,
+		'eventBus'     => EventBusInterface::class,
 		'fileSystem'   => FileSystem::class,
 		'gatekeeper'   => Gatekeeper::class,
 		'humanizer'    => Humanizer::class,
@@ -49,6 +54,7 @@ namespace PHPSTORM_META {
 		'logger'       => Logger::class,
 		'output'       => Output::class,
 		'pagination'   => PaginationFactoryInterface::class,
+		'queryBus'     => QueryBusInterface::class,
 		'redis'        => RedisConnectionManager::class,
 		'request'      => Request::class,
 		'response'     => Response::class,
@@ -64,13 +70,15 @@ namespace PHPSTORM_META {
 		''             => '@',
 		'app'          => Application::class,
 		'authorizer'   => Authorizer::class,
-		'bus'          => CommandBusInterface::class,
+		'bus'          => LegacyCommandBusInterface::class,
 		'cache'        => CacheManager::class,
+		'commandBus'   => CommandBusInterface::class,
 		'config'       => Config::class,
 		'crypto'       => CryptoManager::class,
 		'database'     => DatabaseConnectionManager::class,
 		'errorHandler' => ErrorHandler::class,
 		'event'        => Event::class,
+		'eventBus'     => EventBusInterface::class,
 		'fileSystem'   => FileSystem::class,
 		'gatekeeper'   => Gatekeeper::class,
 		'humanizer'    => Humanizer::class,
@@ -79,6 +87,7 @@ namespace PHPSTORM_META {
 		'logger'       => Logger::class,
 		'output'       => Output::class,
 		'pagination'   => PaginationFactoryInterface::class,
+		'queryBus'     => QueryBusInterface::class,
 		'redis'        => RedisConnectionManager::class,
 		'request'      => Request::class,
 		'response'     => Response::class,
