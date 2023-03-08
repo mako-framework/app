@@ -222,10 +222,10 @@ return
 	 * Error handling
 	 * ---------------------------------------------------------
 	 *
-	 * log_errors     : Set to true if you want to log errors caught by the Mako errors handler.
-	 * display_errors : Set to true to display detailed information about errors caught by the mako error handlers.
-	 * keep           : Specify a list of cookies or headers to keep when an exception has been handled.
-	 * dont_log       : Array of exception types to ignore when logging errors.
+	 * log_errors    : Set to true if you want to log errors caught by the Mako errors handler.
+	 * display_errors: Set to true to display detailed information about errors caught by the mako error handlers.
+	 * keep          : Specify a list of cookies or headers to keep when an exception has been handled.
+	 * dont_log      : Array of exception types to ignore when logging errors.
 	 */
 	'error_handler' =>
 	[
