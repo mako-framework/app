@@ -200,15 +200,17 @@ return
 	 * Logger
 	 * ---------------------------------------------------------
 	 *
-	 * channel: Log channel name
-	 * handler: Log handler(s) to use. The available options out of the box are 'ErrorLog', 'Stream' and 'Syslog'.
-	 * syslog : Syslog specific options (https://linux.die.net/man/3/syslog).
+	 * channel             : Log channel name
+	 * handler             : Log handler(s) to use. The available options out of the box are 'ErrorLog', 'Stream' and 'Syslog'.
+	 * replace_placeholders: Should log message placeholders be replaced?
+	 * syslog              : Syslog specific options (https://linux.die.net/man/3/syslog).
 	 */
 	'logger' =>
 	[
-		'channel' => 'mako',
-		'handler' => ['Stream'],
-		'syslog'  =>
+		'channel'              => 'mako',
+		'handler'              => ['Stream'],
+		'replace_placeholders' => true,
+		'syslog'               =>
 		[
 			'identifier' => 'Mako',
 			'facility'   => LOG_USER,
