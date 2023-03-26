@@ -39,7 +39,7 @@ return
 			'reconnect'   => false,
 			'queries'     =>
 			[
-				'SET NAMES UTF8',
+				'SET NAMES utf8mb4',
 			],
 		],
 
