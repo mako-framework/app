@@ -9,11 +9,9 @@ namespace PHPSTORM_META {
     use mako\cache\CacheManager;
 	use mako\cli\input\Input;
 	use mako\cli\output\Output;
-	use mako\commander\CommandBusInterface as LegacyCommandBusInterface;
 	use mako\config\Config;
 	use mako\database\ConnectionManager as DatabaseConnectionManager;
 	use mako\error\ErrorHandler;
-	use mako\event\Event;
 	use mako\file\FileSystem;
 	use mako\gatekeeper\authorization\Authorizer;
 	use mako\gatekeeper\Gatekeeper;
@@ -37,14 +35,12 @@ namespace PHPSTORM_META {
 		''             => '@',
 		'app'          => Application::class,
 		'authorizer'   => Authorizer::class,
-		'bus'          => LegacyCommandBusInterface::class,
 		'cache'        => CacheManager::class,
 		'commandBus'   => CommandBusInterface::class,
 		'config'       => Config::class,
 		'crypto'       => CryptoManager::class,
 		'database'     => DatabaseConnectionManager::class,
 		'errorHandler' => ErrorHandler::class,
-		'event'        => Event::class,
 		'eventBus'     => EventBusInterface::class,
 		'fileSystem'   => FileSystem::class,
 		'gatekeeper'   => Gatekeeper::class,
@@ -70,14 +66,12 @@ namespace PHPSTORM_META {
 		''             => '@',
 		'app'          => Application::class,
 		'authorizer'   => Authorizer::class,
-		'bus'          => LegacyCommandBusInterface::class,
 		'cache'        => CacheManager::class,
 		'commandBus'   => CommandBusInterface::class,
 		'config'       => Config::class,
 		'crypto'       => CryptoManager::class,
 		'database'     => DatabaseConnectionManager::class,
 		'errorHandler' => ErrorHandler::class,
-		'event'        => Event::class,
 		'eventBus'     => EventBusInterface::class,
 		'fileSystem'   => FileSystem::class,
 		'gatekeeper'   => Gatekeeper::class,
