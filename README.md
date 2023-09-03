@@ -1,12 +1,12 @@
 # Mako Framework
 
-Mako is a lightweight and easy to use PHP framework based on the MVC architectural design pattern.
+Mako is a lightweight and easy to use PHP framework.
 
 Check out the [documentation](http://makoframework.com/docs) and create something awesome!
 
 ## Requirements
 
-The minimum requirements for Mako is PHP 7.4.0 or higher as well as `ext-mbstring`.
+The minimum requirements for Mako is PHP 8.1.0 or higher as well as `ext-json` and `ext-mbstring`.
 
 ## Installation
 
