@@ -12,9 +12,6 @@ class Index extends Controller
 {
 	/**
 	 * Welcome route.
-	 *
-	 * @param  \mako\view\ViewFactory $view View factory
-	 * @return string
 	 */
 	public function welcome(ViewFactory $view): string
 	{
