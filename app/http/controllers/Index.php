@@ -11,7 +11,7 @@ use mako\view\ViewFactory;
 class Index extends Controller
 {
 	/**
-	 * Welcome route.
+	 * Welcome action.
 	 */
 	public function welcome(ViewFactory $view): string
 	{
