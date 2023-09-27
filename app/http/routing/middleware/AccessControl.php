@@ -1,6 +1,6 @@
 <?php
 
-namespace app\routing\middleware;
+namespace app\http\routing\middleware;
 
 use mako\http\routing\middleware\AccessControl as AbstractAccessControl;
 
