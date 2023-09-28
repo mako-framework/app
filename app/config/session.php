@@ -85,7 +85,7 @@ return
 	 *
 	 * You can define as many session configurations as you want.
 	 *
-	 * The supported session types are: "database", "file", "null" and "redis".
+	 * The supported session types are: "apcu", "database", "file", "null" and "redis".
 	 *
 	 * type         : Session type you want to use.
 	 * configuration: Database or redis configuration to use for sessions (only required when using "database" or "redis" sessions).
@@ -94,6 +94,10 @@ return
 	 */
 	'configurations' =>
 	[
+		'apcu' =>
+		[
+			'type' => 'apcu',
+		],
 		'database' =>
 		[
 			'type'          => 'database',
