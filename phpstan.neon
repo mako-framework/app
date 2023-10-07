@@ -1,0 +1,3 @@
+parameters:
+	universalObjectCratesClasses:
+		- mako\database\query\Result
