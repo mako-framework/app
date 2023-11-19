@@ -9,11 +9,11 @@ use mako\http\routing\middleware\AccessControl as AbstractAccessControl;
  */
 class AccessControl extends AbstractAccessControl
 {
-	protected $allowCredentials = true;
+	protected bool $allowCredentials = true;
 
-	protected $allowAllDomains = true;
+	protected bool $allowAllDomains = true;
 
-	protected $allowedHeaders = ['Content-Type'];
+	protected array $allowedHeaders = ['Content-Type'];
 
-	protected $allowedMethods = ['OPTIONS', 'HEAD', 'GET', 'POST', 'PUT', 'PATCH', 'DELETE'];
+	protected array $allowedMethods = ['OPTIONS', 'HEAD', 'GET', 'POST', 'PUT', 'PATCH', 'DELETE'];
 }
