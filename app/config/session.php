@@ -91,12 +91,14 @@ return
 	 * configuration: Database or redis configuration to use for sessions (only required when using "database" or "redis" sessions).
 	 * path         : Save path for session files (only required when using "file" sessions).
 	 * table        : Name of the database table (only required when using "database" sessions).
+	 * prefix       : Session data prefix (only available for "apcu" and "redis" sessions).
 	 */
 	'configurations' =>
 	[
 		'apcu' =>
 		[
-			'type' => 'apcu',
+			'type'   => 'apcu',
+			'prefix' => 'session_',
 		],
 		'database' =>
 		[
@@ -120,6 +122,7 @@ return
 		[
 			'type'          => 'redis',
 			'configuration' => 'session',
+			'prefix'        => 'session_',
 		],
 	],
 ];
