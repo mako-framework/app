@@ -42,20 +42,14 @@ return
 
 	// Pluralization function
 
-	'pluralize' => static function ($word, $count, $rules)
-	{
-		if($count !== 1)
-		{
-			if(isset($rules['irregular'][$word]))
-			{
+	'pluralize' => static function ($word, $count, $rules) {
+		if ($count !== 1) {
+			if (isset($rules['irregular'][$word])) {
 				$word = $rules['irregular'][$word];
 			}
-			else
-			{
-				foreach($rules['plural'] as $search => $replace)
-				{
-					if(preg_match($search, $word))
-					{
+			else {
+				foreach ($rules['plural'] as $search => $replace) {
+					if (preg_match($search, $word)) {
 						$word = preg_replace($search, $replace, $word);
 
 						break;

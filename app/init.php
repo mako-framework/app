@@ -21,10 +21,8 @@ ini_set('error_log', __DIR__ . '/storage/logs/error_' . gmdate('Y_m_d') . '.log'
 /*
  * Convert all errors to ErrorExceptions.
  */
-set_error_handler(static function ($code, $message, $file, $line)
-{
-	if((error_reporting() & $code) !== 0)
-	{
+set_error_handler(static function ($code, $message, $file, $line) {
+	if ((error_reporting() & $code) !== 0) {
 		throw new ErrorException($message, $code, $code, $file, $line);
 	}
 
