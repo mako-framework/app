@@ -13,18 +13,17 @@
 				margin:0px;
 			}
 			.mako {
-				text-align: center;
+				position: absolute;
 				top: 50%;
 				left: 50%;
-				position: absolute;
-				transform: translate(-50%, -50%);
+				text-align: center;
 			}
 			.neon {
-				font-size:200px;
-				color: #bffef2;
 				position: absolute;
 				transform: translate(-50%, -50%);
-				font-weight: 400;
+				font-size:200px;
+				color: #bffef2;
+				font-weight: 500;
 				letter-spacing: 8px;
 				text-shadow: 1px 0px 4px #bffef2, 2px 0px 4px #bffef2, 3px 0px 4px #bffef2, 2px 0px 3px #85fde6, 2px 3px 15px #85fde6, 2px 0px 15px, 5px 0px 125px, 20px 0vw 200px #85fde6,40px 0vw 200px #85fde6;
 			}
@@ -45,6 +44,13 @@
 						opacity: 0.5;
 					}
 				}
+			}
+			.mako:hover .neon {
+				font-weight: 600;
+				letter-spacing: 4px;
+			}
+			.mako:hover span {
+				animation: none;
 			}
 			.version {
 				position: absolute;
