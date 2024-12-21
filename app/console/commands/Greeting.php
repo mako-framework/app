@@ -2,23 +2,17 @@
 
 namespace app\console\commands;
 
+use mako\reactor\attributes\CommandDescription;
+use mako\reactor\attributes\CommandName;
 use mako\reactor\Command;
 
 /**
  * Greeting command.
  */
+#[CommandName('greeting')]
+#[CommandDescription('Greets the user.')]
 class Greeting extends Command
 {
-	/**
-	 * {@inheritDoc}
-	 */
-	protected string $command = 'greeting';
-
-	/**
-	 * {@inheritDoc}
-	 */
-	protected string $description = 'Greets the user.';
-
 	/**
 	 * Prints a greeting.
 	 */
