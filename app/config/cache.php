@@ -29,39 +29,32 @@ return
 	 * configuration: Configuration to use for caching (only required when using "database" or "redis" cache).
 	 * table        : Name of the database table (only required when using "database" cache).
 	 */
-	'configurations' =>
-	[
-		'apcu' =>
-		[
+	'configurations' => [
+		'apcu' => [
 			'type'   => 'apcu',
 			'prefix' => 'mako',
 		],
 
-		'database' =>
-		[
+		'database' => [
 			'type'          => 'database',
 			'prefix'        => 'mako',
 			'configuration' => 'test',
 			'table'         => 'mako_cache',
 		],
 
-		'file' =>
-		[
+		'file' => [
 			'type'   => 'file',
 			'prefix' => 'mako',
 			'path'   => MAKO_APPLICATION_PATH . '/storage/cache',
 		],
 
-		'memcache' =>
-		[
+		'memcache' => [
 			'type'          => 'memcache',
 			'prefix'        => 'mako',
 			'compress_data' => false,
 			'timeout'       => 1,
-			'servers'       =>
-			[
-				'server_1' =>
-				[
+			'servers'       => [
+				'server_1' => [
 					'server'                => 'localhost',
 					'port'                  => '11211',
 					'persistent_connection' => false,
@@ -70,16 +63,13 @@ return
 			],
 		],
 
-		'memcached' =>
-		[
+		'memcached' => [
 			'type'          => 'memcached',
 			'prefix'        => 'mako',
 			'compress_data' => false,
 			'timeout'       => 1,
-			'servers'       =>
-			[
-				'server_1' =>
-				[
+			'servers'       => [
+				'server_1' => [
 					'server' => 'localhost',
 					'port'   => '11211',
 					'weight' => 1,
@@ -87,25 +77,21 @@ return
 			],
 		],
 
-		'memory' =>
-		[
+		'memory' => [
 			'type' => 'memory',
 		],
 
-		'null' =>
-		[
+		'null' => [
 			'type' => 'null',
 		],
 
-		'redis' =>
-		[
+		'redis' => [
 			'type'          => 'redis',
 			'prefix'        => 'mako',
 			'configuration' => 'cache',
 		],
 
-		'wincache' =>
-		[
+		'wincache' => [
 			'type'   => 'wincache',
 			'prefix' => 'mako',
 		],

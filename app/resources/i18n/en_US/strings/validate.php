@@ -73,14 +73,11 @@ return
 	/*
 	 * Custom overrides.
 	 */
-	'overrides' =>
-	[
-		'fieldnames' =>
-		[
+	'overrides' => [
+		'fieldnames' => [
 
 		],
-		'messages' =>
-		[
+		'messages' => [
 
 		],
 	],

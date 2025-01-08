@@ -29,8 +29,7 @@ return
 	 * Note that a time to live of 0 seconds for cookies mean that they
 	 * expire at the end of the session (when the browser closes).
 	 */
-	'ttl' =>
-	[
+	'ttl' => [
 		'data'   => 1800,
 		'cookie' => 0,
 	],
@@ -40,8 +39,7 @@ return
 	 * Cookie options
 	 * ---------------------------------------------------------
 	 */
-	'cookie_options' =>
-	[
+	'cookie_options' => [
 		/*
 		 * The path on the server in which the cookie will be available on.
 		 * If set to '/', the cookie will be available within the entire domain.
@@ -93,33 +91,27 @@ return
 	 * table        : Name of the database table (only required when using "database" sessions).
 	 * prefix       : Session data prefix (only available for "apcu" and "redis" sessions).
 	 */
-	'configurations' =>
-	[
-		'apcu' =>
-		[
+	'configurations' => [
+		'apcu' => [
 			'type'   => 'apcu',
 			'prefix' => 'session_',
 		],
-		'database' =>
-		[
+		'database' => [
 			'type'          => 'database',
 			'configuration' => 'test',
 			'table'         => 'mako_sessions',
 		],
 
-		'file' =>
-		[
+		'file' => [
 			'type' => 'file',
 			'path' => MAKO_APPLICATION_PATH . '/storage/sessions',
 		],
 
-		'null' =>
-		[
+		'null' => [
 			'type' => 'null',
 		],
 
-		'redis' =>
-		[
+		'redis' => [
 			'type'          => 'redis',
 			'configuration' => 'session',
 			'prefix'        => 'session_',

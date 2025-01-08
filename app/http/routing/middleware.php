@@ -2,7 +2,7 @@
 
 use app\http\routing\middleware\AccessControl;
 
-/** @var \mako\http\routing\Dispatcher $dispatcher */
+/** @var mako\http\routing\Dispatcher $dispatcher */
 
 //$dispatcher->setMiddlewarePriority(AccessControl::class, 1);
 

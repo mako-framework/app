@@ -1,3 +1,3 @@
 <?php
 
-/** @var \mako\http\routing\Router $router */
+/** @var mako\http\routing\Router $router */

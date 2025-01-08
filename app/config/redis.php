@@ -29,10 +29,8 @@ return
 	 * tcp_nodelay       : (optional - default true) Disable Nagle's algorithm for reduced latency.
 	 * resp              : (optional - default 2) RESP version.
 	 */
-	'configurations' =>
-	[
-		'localhost' =>
-		[
+	'configurations' => [
+		'localhost' => [
 			'host'       => 'localhost',
 			'port'       => 6379,
 			'persistent' => false,
@@ -41,8 +39,7 @@ return
 			'database'   => 0,
 		],
 
-		'cache' =>
-		[
+		'cache' => [
 			'host'       => 'localhost',
 			'port'       => 6379,
 			'persistent' => false,
@@ -51,8 +48,7 @@ return
 			'database'   => 1,
 		],
 
-		'session' =>
-		[
+		'session' => [
 			'host'       => 'localhost',
 			'port'       => 6379,
 			'persistent' => false,

@@ -8,12 +8,10 @@ return
 [
 	// Inflection rules
 
-	'rules' =>
-	[
+	'rules' => [
 		// Plural noun forms
 
-		'plural' =>
-		[
+		'plural' => [
 			'/er$/i' => 'ere',
 			'/e$/i'  => 'er',
 			'/$/'    => 'er',
@@ -21,8 +19,7 @@ return
 
 		// Irregular words
 
-		'irregular' =>
-		[
+		'irregular' => [
 			'and'   => 'ender',
 			'barn'  => 'barn',
 			'bok'   => 'bøker',

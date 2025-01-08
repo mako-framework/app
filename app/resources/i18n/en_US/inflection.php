@@ -8,12 +8,10 @@ return
 [
 	// Inflection rules
 
-	'rules' =>
-	[
+	'rules' => [
 		// Plural noun forms
 
-		'plural' =>
-		[
+		'plural' => [
 			'/(quiz)$/i'                     => '$1zes',
 			'/([m|l])ouse$/i'                => '$1ice',
 			'/(.+)(e|i)x$/'                  => '$1ices',
@@ -36,8 +34,7 @@ return
 
 		// Irregular words
 
-		'irregular' =>
-		[
+		'irregular' => [
 			'alias'       => 'aliases',
 			'audio'       => 'audio',
 			'child'       => 'children',

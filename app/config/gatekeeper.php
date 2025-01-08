@@ -43,8 +43,7 @@ return
 	 * The array key is the entity class name and the
 	 * value is the corresponding policy class name.
 	 */
-	'policies' =>
-	[
+	'policies' => [
 
 	],
 
@@ -53,8 +52,7 @@ return
 	 * Brute force throttling
 	 * ---------------------------------------------------------
 	 */
-	'throttling' =>
-	[
+	'throttling' => [
 		/*
 		 * Set to TRUE to enable brute force throttling.
 		 */
@@ -76,8 +74,7 @@ return
 	 * Cookie options
 	 * ---------------------------------------------------------
 	 */
-	'cookie_options' =>
-	[
+	'cookie_options' => [
 		/*
 		 * The path on the server in which the cookie will be available on.
 		 * If set to '/', the cookie will be available within the entire domain.
