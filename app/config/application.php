@@ -17,6 +17,18 @@ return
 
 	/*
 	 * ---------------------------------------------------------
+	 * Ingress prefix.
+	 * ---------------------------------------------------------
+	 *
+	 * If your application runs behind an ingress with a path
+	 * prefix, you can set that prefix here. This helps the
+	 * request router correctly resolve the request to the
+	 * appropriate route action.
+	 */
+	'ingress_prefix' => null,
+
+	/*
+	 * ---------------------------------------------------------
 	 * Clean URLs
 	 * ---------------------------------------------------------
 	 *
