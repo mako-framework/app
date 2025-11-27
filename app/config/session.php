@@ -61,6 +61,15 @@ return
 		'secure' => false,
 
 		/*
+		 * When TRUE the cookie will be stored in a separate partition for each top-level site.
+		 * This means that the same third-party cookie cannot be shared across different websites,
+		 * preventing it from being used for cross-site tracking or correlating user activity.
+		 * This setting is part of the CHIPS (Cookies Having Independent Partitioned State) standard
+		 * and is intended to preserve functionality of embedded services while improving privacy.
+		 */
+		'partitioned' => false,
+
+		/*
 		 * When TRUE the cookie will be made accessible only through the HTTP protocol.
 		 * This means that the cookie won't be accessible by scripting languages, such as JavaScript.
 		 * It has been suggested that this setting can effectively help to reduce identity theft through XSS attacks
