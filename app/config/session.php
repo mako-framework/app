@@ -103,7 +103,7 @@ return
 	'configurations' => [
 		'apcu' => [
 			'type'   => 'apcu',
-			'prefix' => 'session_',
+			'prefix' => 'mako:session:',
 		],
 		'database' => [
 			'type'          => 'database',
@@ -123,7 +123,7 @@ return
 		'redis' => [
 			'type'          => 'redis',
 			'configuration' => 'session',
-			'prefix'        => 'session_',
+			'prefix'        => 'mako:session:',
 		],
 	],
 ];

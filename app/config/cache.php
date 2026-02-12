@@ -32,25 +32,25 @@ return
 	'configurations' => [
 		'apcu' => [
 			'type'   => 'apcu',
-			'prefix' => 'mako',
+			'prefix' => 'mako:cache:',
 		],
 
 		'database' => [
 			'type'          => 'database',
-			'prefix'        => 'mako',
+			'prefix'        => 'mako:cache:',
 			'configuration' => 'test',
 			'table'         => 'mako_cache',
 		],
 
 		'file' => [
 			'type'   => 'file',
-			'prefix' => 'mako',
+			'prefix' => 'mako:cache:',
 			'path'   => MAKO_APPLICATION_PATH . '/storage/cache',
 		],
 
 		'memcache' => [
 			'type'          => 'memcache',
-			'prefix'        => 'mako',
+			'prefix'        => 'mako:cache:',
 			'compress_data' => false,
 			'timeout'       => 1,
 			'servers'       => [
@@ -65,7 +65,7 @@ return
 
 		'memcached' => [
 			'type'          => 'memcached',
-			'prefix'        => 'mako',
+			'prefix'        => 'mako:cache:',
 			'compress_data' => false,
 			'timeout'       => 1,
 			'servers'       => [
@@ -87,13 +87,8 @@ return
 
 		'redis' => [
 			'type'          => 'redis',
-			'prefix'        => 'mako',
+			'prefix'        => 'mako:cache:',
 			'configuration' => 'cache',
-		],
-
-		'wincache' => [
-			'type'   => 'wincache',
-			'prefix' => 'mako',
 		],
 	],
 ];
