@@ -118,7 +118,7 @@ return
 			//mako\application\services\HumanizerService::class,
 			//mako\application\services\I18nService::class,
 			//mako\application\services\PaginationFactoryService::class,
-			//mako\application\services\RateLimiter::class,
+			//mako\application\services\RateLimiterService::class,
 			//mako\application\services\RedisService::class,
 			//mako\application\services\SessionService::class,
 			//mako\application\services\ValidatorFactoryService::class,
