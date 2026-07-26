@@ -42,8 +42,8 @@
     "scripts": {
         "post-create-project-cmd": [
             "@php -r \"file_exists('.env') || copy('.env.dist', '.env');\"",
-            "@php app/reactor app:generate-key -d .env.dist -k APP_SECRET",
-            "@php app/reactor app:generate-key -d .env.dist -k ENCRYPTION_KEY"
+            "@php app/reactor app:generate-key -d .env -k APP_SECRET",
+            "@php app/reactor app:generate-key -d .env -k ENCRYPTION_KEY"
         ]
     }
 }
