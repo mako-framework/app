@@ -29,23 +29,14 @@ return
 	 */
 	'configurations' => [
 		'test' => [
-			'dsn'         => 'mysql:dbname=test;host=localhost;port=3306',
-			'username'    => 'username',
-			'password'    => 'password',
+			'dsn'         => mako\env('DB_DSN'),
+			'username'    => mako\env('DB_USERNAME'),
+			'password'    => mako\env('DB_PASSWORD'),
 			'persistent'  => false,
 			'log_queries' => false,
 			'reconnect'   => false,
 			'queries'     => [
 				'SET NAMES utf8mb4',
-			],
-		],
-
-		'sqlite' => [
-			'dsn'         => 'sqlite:' . MAKO_APPLICATION_PATH . '/storage/database/test.sqlite',
-			'log_queries' => false,
-			'reconnect'   => false,
-			'queries'     => [
-				"PRAGMA encoding = 'UTF-8'",
 			],
 		],
 	],

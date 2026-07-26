@@ -24,7 +24,7 @@
     },
     "require": {
         "php": ">=8.5.0",
-        "mako/framework": "^12.2"
+        "mako/framework": "^13.0@dev"
     },
     "minimum-stability": "dev",
     "prefer-stable": true,
@@ -41,6 +41,7 @@
     },
     "scripts": {
         "post-create-project-cmd": [
+            "php -r \"file_exists('.env') || copy('.env.dist', '.env');\"",
             "php app/reactor app:generate-secret"
         ]
     }

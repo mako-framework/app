@@ -1,6 +1,8 @@
 <?php
 
-/**
+use mako\env\DotenvLoader;
+
+/*
  * Configure PHP error reporting.
  * @see http://php.net/manual/en/function.error-reporting.php
  */
@@ -38,3 +40,11 @@ define('MAKO_APPLICATION_PATH', __DIR__);
  * Include the composer autoloader.
  */
 include dirname(__DIR__) . '/vendor/autoload.php';
+
+/*
+ * Load .env if it exists.
+ */
+
+if (file_exists($dotenv = dirname(__DIR__) . '/.env')) {
+	(new DotenvLoader)->load($dotenv);
+}
