@@ -35,7 +35,7 @@ return
 			'port'       => 6379,
 			'persistent' => false,
 			'timeout'    => 60,
-			'password'   => '',
+			'password'   => mako\env('REDIS_PASSWORD', ''),
 			'database'   => 0,
 		],
 
@@ -44,7 +44,7 @@ return
 			'port'       => 6379,
 			'persistent' => false,
 			'timeout'    => 60,
-			'password'   => '',
+			'password'   => mako\env('REDIS_PASSWORD', ''),
 			'database'   => 1,
 		],
 
@@ -53,7 +53,7 @@ return
 			'port'       => 6379,
 			'persistent' => false,
 			'timeout'    => 60,
-			'password'   => '',
+			'password'   => mako\env('REDIS_PASSWORD', ''),
 			'database'   => 2,
 		],
 	],
