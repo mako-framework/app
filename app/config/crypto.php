@@ -29,7 +29,7 @@ return
 		'openssl' => [
 			'library' => 'openssl',
 			'cipher'  => 'AES-256-CTR',
-			'key'     => mako\env('CRYPTO_KEY'),
+			'key'     => mako\env('ENCRYPTION_KEY'),
 		],
 	],
 ];

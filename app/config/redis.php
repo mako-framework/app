@@ -31,8 +31,8 @@ return
 	 */
 	'configurations' => [
 		'localhost' => [
-			'host'       => 'localhost',
-			'port'       => 6379,
+			'host'       => mako\env('REDIS_HOST'),
+			'port'       => mako\env('REDIS_PORT'),
 			'persistent' => false,
 			'timeout'    => 60,
 			'password'   => mako\env('REDIS_PASSWORD', ''),
@@ -40,8 +40,8 @@ return
 		],
 
 		'cache' => [
-			'host'       => 'localhost',
-			'port'       => 6379,
+			'host'       => mako\env('REDIS_HOST'),
+			'port'       => mako\env('REDIS_PORT'),
 			'persistent' => false,
 			'timeout'    => 60,
 			'password'   => mako\env('REDIS_PASSWORD', ''),
@@ -49,8 +49,8 @@ return
 		],
 
 		'session' => [
-			'host'       => 'localhost',
-			'port'       => 6379,
+			'host'       => mako\env('REDIS_HOST'),
+			'port'       => mako\env('REDIS_PORT'),
 			'persistent' => false,
 			'timeout'    => 60,
 			'password'   => mako\env('REDIS_PASSWORD', ''),
