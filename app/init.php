@@ -44,7 +44,6 @@ include dirname(__DIR__) . '/vendor/autoload.php';
 /*
  * Load .env if it exists.
  */
-
 if (file_exists($dotenv = dirname(__DIR__) . '/.env')) {
 	(new DotenvLoader)->load($dotenv);
 }
