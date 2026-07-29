@@ -1,12 +1,11 @@
 <?php
 
 namespace PHPSTORM_META {
-
 	use mako\application\Application;
-    use mako\bus\command\CommandBusInterface;
-    use mako\bus\event\EventBusInterface;
-    use mako\bus\query\QueryBusInterface;
-    use mako\cache\CacheManager;
+	use mako\bus\command\CommandBusInterface;
+	use mako\bus\event\EventBusInterface;
+	use mako\bus\query\QueryBusInterface;
+	use mako\cache\CacheManager;
 	use mako\cli\input\Input;
 	use mako\cli\output\Output;
 	use mako\config\Config;
@@ -24,12 +23,13 @@ namespace PHPSTORM_META {
 	use mako\pagination\PaginationFactoryInterface;
 	use mako\redis\ConnectionManager as RedisConnectionManager;
 	use mako\security\crypto\CryptoManager;
-	use mako\security\Signer;
+	use mako\security\signer\Signer;
 	use mako\session\Session;
 	use mako\syringe\Container;
-	use mako\utility\Humanizer;
-	use mako\validator\ValidatorFactory;
-	use mako\view\ViewFactory;
+    use mako\throttle\RateLimiterInterface;
+    use mako\utility\Humanizer;
+    use mako\validator\ValidatorFactory;
+    use mako\view\ViewFactory;
 
 	override(Container::get(0), map([
 		''             => '@',
@@ -51,6 +51,7 @@ namespace PHPSTORM_META {
 		'output'       => Output::class,
 		'pagination'   => PaginationFactoryInterface::class,
 		'queryBus'     => QueryBusInterface::class,
+		'rateLimiter'  => RateLimiterInterface::class,
 		'redis'        => RedisConnectionManager::class,
 		'request'      => Request::class,
 		'response'     => Response::class,
@@ -82,6 +83,7 @@ namespace PHPSTORM_META {
 		'output'       => Output::class,
 		'pagination'   => PaginationFactoryInterface::class,
 		'queryBus'     => QueryBusInterface::class,
+		'rateLimiter'  => RateLimiterInterface::class,
 		'redis'        => RedisConnectionManager::class,
 		'request'      => Request::class,
 		'response'     => Response::class,
