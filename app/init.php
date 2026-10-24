@@ -12,6 +12,10 @@ error_reporting(E_ALL);
  * Choose if errors that are NOT caught by the Mako error and exception handlers should be
  * printed to the screen as part of the output or if they should be hidden from the user.
  * It is recommended to set this value to false when you are in production.
+ *
+ * If you set a MAKO_ENV environment variable, you can enable it only in dev and test like this:
+ *
+ * ini_set('display_errors', in_array(getenv('MAKO_ENV'), ['dev', 'test'], true));
  */
 ini_set('display_errors', true);
 
@@ -36,13 +40,18 @@ set_error_handler(static function ($code, $message, $file, $line) {
  */
 define('MAKO_APPLICATION_PATH', __DIR__);
 
-/**
+/*
  * Include the composer autoloader.
  */
 include dirname(__DIR__) . '/vendor/autoload.php';
 
 /*
  * Load .env if it exists.
+ *
+ * If you set a MAKO_ENV environment variable, you can skip the overhead of looking for
+ * and parsing the .env file outside of dev and test like this:
+ *
+ * if (in_array(getenv('MAKO_ENV'), ['dev', 'test'], true) && file_exists($dotenv = dirname(__DIR__) . '/.env')) {
  */
 if (file_exists($dotenv = dirname(__DIR__) . '/.env')) {
 	(new DotenvLoader)->load($dotenv);
