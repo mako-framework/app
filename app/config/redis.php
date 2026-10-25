@@ -27,6 +27,8 @@ return
 	 * timeout           : (optional - default 60) Read/write operations timeout in seconds.
 	 * connection_timeout: (optional - default 5) Connection timeout in seconds.
 	 * tcp_nodelay       : (optional - default true) Disable Nagle's algorithm for reduced latency.
+	 * tls               : (optional - default false) Set to true to enable TLS.
+	 * tls_options       : (optional - default []) SSL context options (e.g. 'verify_peer', 'cafile', 'local_cert', etc...).
 	 * resp              : (optional - default 2) RESP version.
 	 */
 	'configurations' => [
